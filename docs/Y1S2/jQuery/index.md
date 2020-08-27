@@ -146,9 +146,9 @@ DOM
 
 ------
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#get).get()
+#### .get()
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#get-index).get( [index] )
+##### .get( [index] )
 
 > `param: index Numebr` 获取哪个元素
 
