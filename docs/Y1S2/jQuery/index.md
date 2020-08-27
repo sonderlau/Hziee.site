@@ -20,7 +20,7 @@
 
 ------
 
-## [#](https://hziee.site/pages/Y1S2/jQuery/main.html#知识要点)知识要点
+## 知识要点
 
 DOM
 
@@ -32,17 +32,17 @@ DOM
 
 ------
 
-## [#](https://hziee.site/pages/Y1S2/jQuery/main.html#文档摘要)文档摘要
+## 文档摘要
 
-### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#值-与-取值)值 与 取值
+### 值 与 取值
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#html).html()
+#### .html()
 
 返回选中元素的HTML内容 采用`innerHtml`
 
 **对XML文档无效**
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#html-2)html()
+##### html()
 
 > ```
 > return String
@@ -50,7 +50,7 @@ DOM
 >
 > 获取集合中第一个匹配元素的HTML内容
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#html-string)html(String)
+##### html(String)
 
 > ```
 > return jQuery
@@ -58,17 +58,15 @@ DOM
 >
 > 设置每个匹配元素的HTML字符串
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#html-function-index-currentcontent)html( function(index, currentContent))
+##### html( function(index, currentContent))
 
-> ```
-> return jQuery
-> ```
+> ```return jQuery```
 >
 > `params: index Integer` 当前元素在选中元素集中的位置
 >
 > `params: currentContent String` 当前选中元素的HTML内容
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#attr).attr()
+##### .attr()
 
 取匹配的元素集合中的第一个元素的属性的值 或 设置每一个匹配元素的一个或多个属性
 
@@ -88,7 +86,7 @@ DOM
 
 ------
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#jquery-trim-str)jQuery.trim(str)
+#### jQuery.trim(str)
 
 删除字符串开始和结尾处的换行符 空格(包括连续的空格) 和制表符(Tab)
 
@@ -98,15 +96,15 @@ DOM
 
 ------
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#click).click()
+#### .click()
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#click-2).click()
+##### .click()
 
 `.trigger("click")`的便捷方式
 
 触发该事件
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#click-handler-eventobject).click(handler(eventObject))
+##### .click(handler(eventObject))
 
 > ```
 > param: handler(eventObject) Function
@@ -116,33 +114,33 @@ DOM
 
 ------
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#find-selector).find(selector)
+#### .find(selector)
 
 后代元素选择器
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#find-selector-2).find( selector)
+##### [.find( selector)
 
 > `param: selector Selector` 用于匹配元素的选择器字符串
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#find-jquery-object).find( jQuery_object)
+##### .find( jQuery_object)
 
 > `param: jQuery_object Object` 匹配元素集合的jQuery对象
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#find-element).find( element)
+##### .find( element)
 
 > `param: element Element` 匹配元素集合的元素
 
 ------
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#eq).eq()
+#### .eq()
 
 减少匹配元素的集合为制定的索引的哪一个元素
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#eq-index).eq( index)
+##### .eq( index)
 
 > `param: index Integer` 指示元素的位置
 
-##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#eq-index-2).eq( -index)
+##### .eq( -index)
 
 > `param: -index Integer` 元素倒数的位置
 
