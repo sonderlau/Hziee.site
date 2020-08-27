@@ -13,6 +13,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.HZIEE }}
         TARGET_REPO: sonderlau/sonderlau.github.io
         TARGET_BRANCH: master
-        BUILD_SCRIPT: npm run docs:build
+        BUILD_SCRIPT: npm install && npm run docs:build
         BUILD_DIR: docs/.vuepress/dist
         CNAME: hziee.site
