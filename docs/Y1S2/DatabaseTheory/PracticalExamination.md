@@ -133,7 +133,7 @@ on Student(Clno asc );
 drop index Student.ix_class;
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p83-12)P83_12
+## P83_12
 
 ```sql
 -- -----------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ where Clno in (
 );
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p83-13)P83_13
+## P83_13
 
 ```sql
 --------------------------------------------------------------------------------------
@@ -279,7 +279,7 @@ where (
       );
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p83-14)P83_14
+## P83_14
 
 ```sql
 ------------------------------------------------------------------
@@ -309,7 +309,7 @@ group by Sno
 having count(Cno) > 3;
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p83-15)P83_15
+## P83_15
 
 ```sql
 ----------------------------------------------------------------------
@@ -379,7 +379,7 @@ from student
 group by clno;
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p83-16)P83_16
+## P83_16
 
 ```sql
 ----------------------------------------------------------------------
@@ -428,7 +428,7 @@ select Sname,2020-Sage
 from Stu_01311_2;
 ```
 
-## [#](https://hziee.site/pages/Y1S2/DatabaseTheory/NotesForPraticalExamination.html#p102-10)P102_10
+## P102_10
 
 ```sql
 ----------------------------------------------------------------------
