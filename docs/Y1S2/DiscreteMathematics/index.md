@@ -2,20 +2,18 @@
 
 ------
 
-- [第一章 命题逻辑](./Notes/01.html)
-- [第二章 谓词逻辑](./Notes/02.html)
-- [第三章 1-4小节](./Notes/03_1.html)
-- [第三章 5-8小节](./Notes/03_2.html)
-- [第五章 图](./Notes/05.html)
-- [第六章 有向图](./Notes/06.html)
+- [第一章 命题逻辑](./Notes/01)
+- [第二章 谓词逻辑](./Notes/02)
+- [第三章 1-4小节](./Notes/03_1)
+- [第三章 5-8小节](./Notes/03_2)
+- [第五章 图](./Notes/05)
+- [第六章 有向图](./Notes/06)
 
-::: warning 警告
+::: warning
 
-由于目前的 `@vuepress/mathjax` 插件还不稳定
+目前对文档修复了不少错误的地方 但难免有纰漏
 
-部分内容无法正常渲染出来 **只能等待后续的插件更新**
-
-可自行下载该文档 用`Markdown`阅读器 如 [Typora](https://typora.io/) 打开
+如果对渲染结果不满意 可自行下载该文档 用`Markdown`阅读器 如 [Typora](https://typora.io/) 打开
 
 
 [离散数学笔记集合下载](@cos/Y1S2/DiscreteMathematics/离散数学笔记集合.zip)
@@ -32,7 +30,6 @@
 超星平台作业答案目前还未导出完全
 
 2020 / 8 / 27
-
 
 [超星平台作业答案](@cos/Y1S2/DiscreteMathematics/超星平台作业答案.zip)
 :::
