@@ -28,7 +28,7 @@
 |                                                             |                                                              |
 | 做出贡献的人太多了 无法一一提及                             | It can't be listed one by one for there's far **too much** people who contributed. |
 | 半夜里 嘈杂声把我们吵醒了                                   | In **the middle of the** night, noises woke me up.           |
-| 他不应该对我说的话感到生气，那仅仅是个玩笑而已              | He shouldn't be mad at what I said, it was **nothing more than** a joke. |
+| 他不应该对我说的话感到生气,那仅仅是个玩笑而已              | He shouldn't be mad at what I said, it was **nothing more than** a joke. |
 | 我们邀请了所有的朋友去野餐 但是由于下雨只来了其中的五位     | We invited all of my friends for picnic, but only five of them **showed up** because of the rain. |
 | 婚姻被视为一件严肃的事情                                    | Marriage is **viewed as** a serious things.                  |
 | 令我失望的是 这部电影 并不像我期望的那么好                  | What makes me disappointed, the movie **lives up to** my expectations. |

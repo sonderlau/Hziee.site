@@ -3,11 +3,11 @@ module.exports = {
   description: "在线文档",
   head: [["link", { rel: "icon", href: "/atom_64x64.ico" }]],
   markdown: {
-    plugins: [
-      ["markdown-it-replace-link"]
-    ],
+    plugins: [["markdown-it-replace-link"], ["markdown-it-sub"], ['markdown-it-sup']],
     extendMarkdown: (md) => {
       md.set({ breaks: true });
+      md.use(require("markdown-it-sub"));
+      md.use(require('markdown-it-sup'));
       md.use(require("markdown-it-replace-link"), {
         replaceLink: function(link, env) {
           // 云端存储的替换
@@ -16,8 +16,8 @@ module.exports = {
               "https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com" +
               link.toString().substring(4)
             );
-          } else{
-            return link.toString()
+          } else {
+            return link.toString();
           }
         },
       });
@@ -59,7 +59,6 @@ module.exports = {
         successText: "复制成功 !",
       },
     ],
-    "vuepress-plugin-auto-sidebar",
     ["vuepress-plugin-smooth-scroll"],
     ["@vuepress/back-to-top"],
     [
@@ -78,17 +77,16 @@ module.exports = {
       },
     ],
     [
-      "vuepress-plugin-mathjax",
+      "@maginapp/vuepress-plugin-katex",
       {
-        target: "svg",
-        macros: {
-          "*": "\\times",
-        },
+        delimiters: "dollars",
+        strict: false
       },
     ],
   ],
   themeConfig: {
     lastUpdated: "Last Updated",
+    sidebar: "auto",
     nav: [
       { text: "主页", link: "/" },
       {

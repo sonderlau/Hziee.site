@@ -10,7 +10,7 @@
 >
 > 执行完操作后返回到管理页面
 
-2.不同房间的标准价格制定，收费方式的制定：/天 或 /小时
+2.不同房间的标准价格制定,收费方式的制定：/天 或 /小时
 
 > 每个房间的收费方式要写 2 个 `roomNamaPricePerHour / roomNamePricePerDay`
 
@@ -312,7 +312,7 @@ bool judge(int a)
     case 1:
         if (t1 == 30)
         {
-            printf("该类型房间已满，请选择其他房间(输入0回到首页）:");
+            printf("该类型房间已满,请选择其他房间(输入0回到首页）:");
             scanf("%d", &a);
             if (judge(a))
                 return true;
@@ -324,7 +324,7 @@ bool judge(int a)
     case 2:
         if (t2 == 30)
         {
-            printf("该类型房间已满，请选择其他房间(输入0回到首页）:");
+            printf("该类型房间已满,请选择其他房间(输入0回到首页）:");
             scanf("%d", &a);
             if (judge(a))
                 return true;
@@ -336,7 +336,7 @@ bool judge(int a)
     case 3:
         if (t3 == 30)
         {
-            printf("该类型房间已满，请选择其他房间(输入0回到首页）:");
+            printf("该类型房间已满,请选择其他房间(输入0回到首页）:");
             scanf("%d", &a);
             if (judge(a))
                 return true;
@@ -348,7 +348,7 @@ bool judge(int a)
     case 4:
         if (t4 == 30)
         {
-            printf("该类型房间已满，请选择其他房间(输入0回到首页）:");
+            printf("该类型房间已满,请选择其他房间(输入0回到首页）:");
             scanf("%d", &a);
             if (judge(a))
                 return true;
@@ -846,7 +846,7 @@ void quit()
 {
     system("cls");
     int number, type, temp;
-    printf("退房系统，请输入1表示确定（如果误入请输入0以退出):");
+    printf("退房系统,请输入1表示确定（如果误入请输入0以退出):");
     scanf("%d", &temp);
     if (!temp)
     {

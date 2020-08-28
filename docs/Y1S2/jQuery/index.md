@@ -82,7 +82,7 @@ DOM
 
 > `param attributeName String`要设置值的属性名.
 >
-> `param function(index, attr) Function()` 这个函数返回用来设置的值，this 指向当前的元素。接收 index 参数表示元素在匹配集合中的索引位置和 html 参数表示元素上原来的 HTML 内容
+> `param function(index, attr) Function()` 这个函数返回用来设置的值,this 指向当前的元素。接收 index 参数表示元素在匹配集合中的索引位置和 html 参数表示元素上原来的 HTML 内容
 
 ---
 
@@ -213,11 +213,11 @@ DOM
 > - 他们的 CSS `display`值是`none`
 > - 他们是`type="hidden"`的表单元素
 > - 它们的宽度和高度都显式设置为 0
-> - 一个祖先元素是隐藏的，因此该元素是不会在页面上显示
+> - 一个祖先元素是隐藏的,因此该元素是不会在页面上显示
 
 **Additional Notes（其他注意事项）:**
 
-> 因为 `:hidden()` 是一个 jQuery 延伸出来的一个选择器。 并且不是的 CSS 规范的一部分, 使用`:hidden()`查询不能充分利用原生 DOM 提供的`querySelectorAll()` 方法来提高性能。为了在现代浏览器上获得更佳的性能，请使用[`.filter(":hidden")`](https://www.jquery123.com/filter)代替
+> 因为 `:hidden()` 是一个 jQuery 延伸出来的一个选择器。 并且不是的 CSS 规范的一部分, 使用`:hidden()`查询不能充分利用原生 DOM 提供的`querySelectorAll()` 方法来提高性能。为了在现代浏览器上获得更佳的性能,请使用[`.filter(":hidden")`](https://www.jquery123.com/filter)代替
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#visible):visible
 
@@ -225,7 +225,7 @@ DOM
 
 > `visibility: hidden` or `opacity: 0` 被认为是可见的
 >
-> 可见元素的宽度或高度，是大于零的
+> 可见元素的宽度或高度,是大于零的
 >
 > 隐藏元素上做动画 元素被认为是可见的 直到动画结束
 >
@@ -390,7 +390,7 @@ _匹配的元素集合中获取第一个元素的当前计算高度值,包括 pa
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#outerwidth)outerWidth()
 
-_获取元素集合中第一个元素的当前计算宽度值,包括 padding，border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）_
+_获取元素集合中第一个元素的当前计算宽度值,包括 padding,border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值,或如果在一个空集合上调用该方法,则会返回 null。）_
 
 > `param [includeMargin] Boolean` 明是否在计算时包含元素的 margin 值
 
@@ -398,7 +398,7 @@ _获取元素集合中第一个元素的当前计算宽度值,包括 padding，b
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#outerheight)outerHeight
 
-_获取元素集合中第一个元素的当前计算高度值,包括 padding，border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）_
+_获取元素集合中第一个元素的当前计算高度值,包括 padding,border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值,或如果在一个空集合上调用该方法,则会返回 null。）_
 
 > `param [includeMargin] Boolean` 明是否在计算时包含元素的 margin 值
 
@@ -412,21 +412,21 @@ _获取元素集合中第一个元素的当前计算高度值,包括 padding，b
 
 > 无参
 >
-> 在匹配的元素集合中，获取的第一个元素的当前坐标，坐标相对于文档
+> 在匹配的元素集合中,获取的第一个元素的当前坐标,坐标相对于文档
 
 > `param coordinates PlainObject` 包含 top left 属性的对象 用整数指明元素的新顶部和左边坐标
 >
-> `param function(index, coords)` 返回用于设置坐标的一个函数。接收元素在匹配的元素集合中的索引位置作为第一个参数，和当前坐标作为第二个参数。这个函数应该返回一个包含 top 和 left 属性的对象
+> `param function(index, coords)` 返回用于设置坐标的一个函数。接收元素在匹配的元素集合中的索引位置作为第一个参数,和当前坐标作为第二个参数。这个函数应该返回一个包含 top 和 left 属性的对象
 
-如果对象原先的`position`样式属性是`static`的话，会被改成`relative`来实现重定位。
+如果对象原先的`position`样式属性是`static`的话,会被改成`relative`来实现重定位。
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#offsetparent)offsetParent()
 
-取得离指定元素最近的含有定位信息的祖先元素。含有定位信息的元素指的是，CSS 的 position 属性是 relative, absolute, 或 fixed 的元素
+取得离指定元素最近的含有定位信息的祖先元素。含有定位信息的元素指的是,CSS 的 position 属性是 relative, absolute, 或 fixed 的元素
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#position)position()
 
-获取匹配元素中第一个元素的当前坐标，相对于 offset parent 的坐标。( 注：offset parent 指离该元素最近的而且被定位过的祖先元素 )
+获取匹配元素中第一个元素的当前坐标,相对于 offset parent 的坐标。( 注：offset parent 指离该元素最近的而且被定位过的祖先元素 )
 
 `.position()`返回一个包含 `top` 和 `left`属性的对象.
 

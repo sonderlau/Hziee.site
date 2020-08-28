@@ -264,11 +264,11 @@ LL measure(LL x,LL y)
   >
   > **求两个数的最大公约数**：
   >
-  > 如果 m > n，令余数 remainder = m%n，
+  > 如果 m > n,令余数 remainder = m%n,
   >
-  > 如果余数不为 0，则令 m = n， n = remainder，
+  > 如果余数不为 0,则令 m = n, n = remainder,
   >
-  > 再次 remainder = m%n，直到 remainder = 0，此时 n 就是最大公约数
+  > 再次 remainder = m%n,直到 remainder = 0,此时 n 就是最大公约数
   >
   >
   > #### 短除算法
@@ -637,7 +637,7 @@ return 0;
 
 ![燕尾定理](https://bkimg.cdn.bcebos.com/pic/b58f8c5494eef01fee3893ade3fe9925bc317dae?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5)
 
-- > 燕尾定理：在三角形 ABC 中，AD，BE，CF 相交于同一点 O，有
+- > 燕尾定理：在三角形 ABC 中,AD,BE,CF 相交于同一点 O,有
 
   > S△AOB∶S△AOC=BD∶CD
   >
@@ -645,7 +645,7 @@ return 0;
   >
   > S△BOC∶S△AOC=BF∶AF
   >
-  > 因此图类似燕尾而得名。是五大模型之一，是一个关于平面三角形的定理，俗称燕尾定理。
+  > 因此图类似燕尾而得名。是五大模型之一,是一个关于平面三角形的定理,俗称燕尾定理。
   >
   >
   > 燕尾定理由英国数学家亚马力斯·凯诺(1753-1821)(Yanmalice·Kanon)于 1785 年发现
