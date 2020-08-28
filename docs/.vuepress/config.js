@@ -8,7 +8,7 @@ module.exports = {
     ],
     extendMarkdown: (md) => {
       md.set({ breaks: true });
-      md.use(require(), {
+      md.use(require("markdown-it-replace-link"), {
         replaceLink: function(link, env) {
           // 云端存储的替换
           if (link.toString().startsWith("@cos")) {
