@@ -8,6 +8,7 @@ module.exports = {
       md.set({ breaks: true });
       md.use(require("markdown-it-sub"));
       md.use(require('markdown-it-sup'));
+      md.use(require('markdown-it-task-lists'))
       md.use(require("markdown-it-replace-link"), {
         replaceLink: function(link, env) {
           // 云端存储的替换
