@@ -1,12 +1,12 @@
 # jQuery API Document
 
-------
+---
 
 资源索引
 
-[平时作业集合](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/jQuery/ZMX_HomeWork.zip)
+[平时作业集合](@cos/Y1S2/jQuery/ZMX_HomeWork.zip)
 
-[期末大作业报包](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/jQuery/期末大作业报告.doc)
+[期末大作业报包](@cos/Y1S2/jQuery/期末大作业报告.doc)
 
 以下是笔记~~~文档~~~内容
 
@@ -18,7 +18,7 @@
 
 参考: [jQuery API Document](https://api.jquery123.com/) [w3school](https://www.w3schools.com/jquery/default.asp)
 
-------
+---
 
 ## 知识要点
 
@@ -30,7 +30,7 @@ DOM
 >
 > Refer : w3school [What is HTML DOM](https://www.w3schools.com/whatis/whatis_htmldom.asp)
 
-------
+---
 
 ## 文档摘要
 
@@ -38,9 +38,9 @@ DOM
 
 #### .html()
 
-返回选中元素的HTML内容 采用`innerHtml`
+返回选中元素的 HTML 内容 采用`innerHtml`
 
-**对XML文档无效**
+**对 XML 文档无效**
 
 ##### html()
 
@@ -48,7 +48,7 @@ DOM
 > return String
 > ```
 >
-> 获取集合中第一个匹配元素的HTML内容
+> 获取集合中第一个匹配元素的 HTML 内容
 
 ##### html(String)
 
@@ -56,15 +56,15 @@ DOM
 > return jQuery
 > ```
 >
-> 设置每个匹配元素的HTML字符串
+> 设置每个匹配元素的 HTML 字符串
 
 ##### html( function(index, currentContent))
 
-> ```return jQuery```
+> `return jQuery`
 >
 > `params: index Integer` 当前元素在选中元素集中的位置
 >
-> `params: currentContent String` 当前选中元素的HTML内容
+> `params: currentContent String` 当前选中元素的 HTML 内容
 
 ##### .attr()
 
@@ -82,9 +82,9 @@ DOM
 
 > `param attributeName String`要设置值的属性名.
 >
-> `param function(index, attr) Function()` 这个函数返回用来设置的值，this指向当前的元素。接收index 参数表示元素在匹配集合中的索引位置和html 参数表示元素上原来的 HTML 内容
+> `param function(index, attr) Function()` 这个函数返回用来设置的值，this 指向当前的元素。接收 index 参数表示元素在匹配集合中的索引位置和 html 参数表示元素上原来的 HTML 内容
 
-------
+---
 
 #### jQuery.trim(str)
 
@@ -94,7 +94,7 @@ DOM
 > params: str String
 > ```
 
-------
+---
 
 #### .click()
 
@@ -112,7 +112,7 @@ DOM
 >
 > 每次事件触发执行的函数
 
-------
+---
 
 #### .find(selector)
 
@@ -124,13 +124,13 @@ DOM
 
 ##### .find( jQuery_object)
 
-> `param: jQuery_object Object` 匹配元素集合的jQuery对象
+> `param: jQuery_object Object` 匹配元素集合的 jQuery 对象
 
 ##### .find( element)
 
 > `param: element Element` 匹配元素集合的元素
 
-------
+---
 
 #### .eq()
 
@@ -144,7 +144,7 @@ DOM
 
 > `param: -index Integer` 元素倒数的位置
 
-------
+---
 
 #### .get()
 
@@ -152,7 +152,7 @@ DOM
 
 > `param: index Numebr` 获取哪个元素
 
-------
+---
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#text).text()
 
@@ -200,7 +200,7 @@ DOM
 
 此方法通常用于设置表单字段的值
 
-------
+---
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#选择器-selector)选择器 Selector
 
@@ -210,14 +210,14 @@ DOM
 
 > 可被认为是隐藏的几个情况
 >
-> - 他们的CSS `display`值是`none`
+> - 他们的 CSS `display`值是`none`
 > - 他们是`type="hidden"`的表单元素
-> - 它们的宽度和高度都显式设置为0
+> - 它们的宽度和高度都显式设置为 0
 > - 一个祖先元素是隐藏的，因此该元素是不会在页面上显示
 
 **Additional Notes（其他注意事项）:**
 
-> 因为 `:hidden()` 是一个 jQuery 延伸出来的一个选择器。 并且不是的CSS规范的一部分, 使用`:hidden()`查询不能充分利用原生DOM提供的`querySelectorAll()` 方法来提高性能。为了在现代浏览器上获得更佳的性能，请使用[`.filter(":hidden")`](https://www.jquery123.com/filter)代替
+> 因为 `:hidden()` 是一个 jQuery 延伸出来的一个选择器。 并且不是的 CSS 规范的一部分, 使用`:hidden()`查询不能充分利用原生 DOM 提供的`querySelectorAll()` 方法来提高性能。为了在现代浏览器上获得更佳的性能，请使用[`.filter(":hidden")`](https://www.jquery123.com/filter)代替
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#visible):visible
 
@@ -263,13 +263,13 @@ DOM
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#each)each ()
 
-遍历一个jQuery对象 为每个匹配元素执行一个函数
+遍历一个 jQuery 对象 为每个匹配元素执行一个函数
 
 > `param function(index, Element)` 为每个匹配元素执行的一个函数
 >
 > 关键字 this 总是指向这个元素
 
-------
+---
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#属性选择-attributes)属性选择 Attributes
 
@@ -289,11 +289,11 @@ DOM
 >
 > `param :value` 属性值
 
-#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#selector-selectorn)[selector][selectorN]
+#### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#selector-selectorn)[selector][selectorn]
 
 将每一个选择器匹配到的元素合并后一起返回
 
-> `param : selecotrN` N个有效的选择器
+> `param : selecotrN` N 个有效的选择器
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#css-相关)CSS 相关
 
@@ -314,15 +314,15 @@ DOM
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#css-propertyname-function-index-value).css(propertyName, function(index, value) )
 
-设置每个匹配元素的一个或多个CSS属性
+设置每个匹配元素的一个或多个 CSS 属性
 
-> `param : propertyName String` CSS属性名 `param : value` 值
+> `param : propertyName String` CSS 属性名 `param : value` 值
 >
-> `param : propertyName String` CSS属性名
+> `param : propertyName String` CSS 属性名
 >
 > `param : function(index, value)` 一个返回设置值的函数
 
-------
+---
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#操作类-classes)操作类 classes
 
@@ -344,7 +344,7 @@ DOM
 
 > `param : className String` 每个匹配元素移除的一个或多个用空格隔开的样式名
 >
-> `param :function(index, currentClass)` 一个函数 返回一个或多个将要被移除的样式名 index 参数表示在所有匹配元素的集合中当前元素的索引位置class 参数表示原有的样式名
+> `param :function(index, currentClass)` 一个函数 返回一个或多个将要被移除的样式名 index 参数表示在所有匹配元素的集合中当前元素的索引位置 class 参数表示原有的样式名
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#hasclass)hasClass()
 
@@ -352,7 +352,7 @@ DOM
 
 > `param : className String` 要查询的样式名
 
-------
+---
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#操作尺寸-size)操作尺寸 size
 
@@ -360,51 +360,51 @@ DOM
 
 > `返回元素的宽度 为纯数字
 
-> 给每个匹配的元素设置CSS宽度
+> 给每个匹配的元素设置 CSS 宽度
 >
 > `param value Number\String` 一个正整数代表的像素数,或是整数和一个可选的附加单位 (默认是 px)
 
-> `param function(index, width)`返回用于设置宽度的一个函数 接收元素的索引位置和元素旧的高度值作为参数 在函数中 this指向集合中当前的元素
+> `param function(index, width)`返回用于设置宽度的一个函数 接收元素的索引位置和元素旧的高度值作为参数 在函数中 this 指向集合中当前的元素
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#height)height()
 
 > `返回元素的宽度 为纯数字
 
-> 给每个匹配的元素设置CSS宽度
+> 给每个匹配的元素设置 CSS 宽度
 >
 > `param value Number\String` 一个正整数代表的像素数,或是整数和一个可选的附加单位 (默认是 px)
 
-> `param function(index, height)`返回用于设置高度的一个函数 接收元素的索引位置和元素旧的高度值作为参数 在函数中 this指向集合中当前的元素
+> `param function(index, height)`返回用于设置高度的一个函数 接收元素的索引位置和元素旧的高度值作为参数 在函数中 this 指向集合中当前的元素
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#innerwidth)innerWidth()
 
-*匹配的元素集合中获取第一个元素的当前计算宽度值,包括padding 但是不包括border*
+_匹配的元素集合中获取第一个元素的当前计算宽度值,包括 padding 但是不包括 border_
 
 不适用于 window 和 document 对象
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#innerheight)innerHeight()
 
-*匹配的元素集合中获取第一个元素的当前计算高度值,包括padding 但是不包括border*
+_匹配的元素集合中获取第一个元素的当前计算高度值,包括 padding 但是不包括 border_
 
 不适用于 window 和 document 对象
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#outerwidth)outerWidth()
 
-*获取元素集合中第一个元素的当前计算宽度值,包括padding，border和选择性的margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）*
+_获取元素集合中第一个元素的当前计算宽度值,包括 padding，border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）_
 
-> `param [includeMargin] Boolean` 明是否在计算时包含元素的margin值
+> `param [includeMargin] Boolean` 明是否在计算时包含元素的 margin 值
 
-这个方法不适用于window 和 document对象
+这个方法不适用于 window 和 document 对象
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#outerheight)outerHeight
 
-*获取元素集合中第一个元素的当前计算高度值,包括padding，border和选择性的margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）*
+_获取元素集合中第一个元素的当前计算高度值,包括 padding，border 和选择性的 margin。（注：返回一个整数（不包含“px”）表示的值，或如果在一个空集合上调用该方法，则会返回 null。）_
 
-> `param [includeMargin] Boolean` 明是否在计算时包含元素的margin值
+> `param [includeMargin] Boolean` 明是否在计算时包含元素的 margin 值
 
-这个方法不适用于window 和 document对象
+这个方法不适用于 window 和 document 对象
 
-------
+---
 
 ### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#操作位置-localtion)操作位置 localtion
 
@@ -414,9 +414,9 @@ DOM
 >
 > 在匹配的元素集合中，获取的第一个元素的当前坐标，坐标相对于文档
 
-> `param coordinates PlainObject` 包含top left属性的对象 用整数指明元素的新顶部和左边坐标
+> `param coordinates PlainObject` 包含 top left 属性的对象 用整数指明元素的新顶部和左边坐标
 >
-> `param function(index, coords)` 返回用于设置坐标的一个函数。接收元素在匹配的元素集合中的索引位置作为第一个参数，和当前坐标作为第二个参数。这个函数应该返回一个包含top 和 left属性的对象
+> `param function(index, coords)` 返回用于设置坐标的一个函数。接收元素在匹配的元素集合中的索引位置作为第一个参数，和当前坐标作为第二个参数。这个函数应该返回一个包含 top 和 left 属性的对象
 
 如果对象原先的`position`样式属性是`static`的话，会被改成`relative`来实现重定位。
 
@@ -426,7 +426,7 @@ DOM
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#position)position()
 
-获取匹配元素中第一个元素的当前坐标，相对于offset parent的坐标。( 注：offset parent指离该元素最近的而且被定位过的祖先元素 )
+获取匹配元素中第一个元素的当前坐标，相对于 offset parent 的坐标。( 注：offset parent 指离该元素最近的而且被定位过的祖先元素 )
 
 `.position()`返回一个包含 `top` 和 `left`属性的对象.
 
@@ -436,7 +436,7 @@ DOM
 
 > 无参
 >
-> *获取匹配的元素集合中第一个元素的当前水平滚动条的位置。*
+> _获取匹配的元素集合中第一个元素的当前水平滚动条的位置。_
 
 > `param value Number` 用来设置滚动水平位置的正整数
 >
@@ -448,7 +448,7 @@ DOM
 
 > 无参
 >
-> *获取匹配的元素集合中第一个元素的当前垂直滚动条的位置。*
+> _获取匹配的元素集合中第一个元素的当前垂直滚动条的位置。_
 
 > `param value Number` 用来设置滚动垂直位置的正整数
 >
@@ -490,7 +490,7 @@ DOM
 >
 > 可以多个元素
 
-> `param function( index)` 接收index 参数表示元素在匹配集合中的索引位置和html 参数表示元素上原来的 HTML 内容 在函数中this指向元素集合中的当前元素
+> `param function( index)` 接收 index 参数表示元素在匹配集合中的索引位置和 html 参数表示元素上原来的 HTML 内容 在函数中 this 指向元素集合中的当前元素
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#before)before()
 
@@ -500,7 +500,7 @@ DOM
 
 > `param function( index )` 插在每个匹配元素的**前面** 接收元素在集合中的索引位置作为参数
 >
-> 在函数中this指向元素集合中的当前元素
+> 在函数中 this 指向元素集合中的当前元素
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#insertbefore)insertBefore()
 
@@ -516,7 +516,7 @@ DOM
 
 > `param function( index )` 插在每个匹配元素的**后面** 接收元素在集合中的索引位置作为参数
 >
-> 在函数中this指向元素集合中的当前元素
+> 在函数中 this 指向元素集合中的当前元素
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#insertafter)insertAfter()
 
@@ -524,35 +524,35 @@ DOM
 
 > `param target Selector\Element\jQuery` 匹配的元素将会被插入在由参数指定的目标后面
 
-------
+---
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#删除)删除
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#remove)remove()
 
-将匹配元素集合从DOM中删除 注: 同时移除元素上的事件及 jQuery 数据
+将匹配元素集合从 DOM 中删除 注: 同时移除元素上的事件及 jQuery 数据
 
 > `param [selector] Selector` 一个选择器表达式用来过滤将被移除的匹配元素集合
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#detach)detach()
 
-从DOM中去掉所有匹配的元素
+从 DOM 中去掉所有匹配的元素
 
 > `param [selector] Selector` 个选择表达式将需要移除的元素从匹配的元素中过滤出来
 
-------
+---
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#清空)清空
 
 ##### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#empty-2)empty()
 
-从DOM中移除集合中匹配元素的所有子节点
+从 DOM 中移除集合中匹配元素的所有子节点
 
 > 无参
 >
 > 这个方法不仅移除子元素（和其他后代元素） 同样移除元素里的文本
 
-------
+---
 
 #### [#](https://hziee.site/pages/Y1S2/jQuery/main.html#复制节点)复制节点
 
@@ -560,7 +560,7 @@ DOM
 
 创建一个匹配的元素集合的深度拷贝副本
 
-> `param withDataAndEvents Boolean` 默认false
+> `param withDataAndEvents Boolean` 默认 false
 >
 > ```
 > param deepWithDataAndEvents Boolean` 默认`value of withDataAndEvents

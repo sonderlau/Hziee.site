@@ -2,9 +2,9 @@
 
 [SQL语言基础](./SQLFundamentals.md)
 
-[课件PPT](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DatabaseTheory/课件PPT.zip)
+[课件PPT](@cos/Y1S2/DatabaseTheory/课件PPT.zip)
 
-[历史期末卷子集合](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DatabaseTheory/历史期末卷子.zip)
+[历史期末卷子集合](@cos/Y1S2/DatabaseTheory/历史期末卷子.zip)
 
 [教材课后作业](https://hziee.site/pages/Y1S2/DatabaseTheory/HomeworkImg.html)
 

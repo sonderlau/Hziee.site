@@ -4,8 +4,8 @@
 
 ------
 
-[Java实践练习 121道HDOJ题目源码合集](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S1/LanguageJava/PraticalExercises.zip)
+[Java实践练习 121道HDOJ题目源码合集](@cos/Y1S1/LanguageJava/PraticalExercises.zip)
 
-[实践作业源码合集](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S1/LanguageJava/PraticalWorkSourceCodes.zip)
+[实践作业源码合集](@cos/Y1S1/LanguageJava/PraticalWorkSourceCodes.zip)
 
-[教材例子源码项目合集](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S1/LanguageJava/TeachingMaterialCaseSourceCodes.zip)
+[教材例子源码项目合集](@cos/Y1S1/LanguageJava/TeachingMaterialCaseSourceCodes.zip)

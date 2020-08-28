@@ -4,10 +4,10 @@
 
 ------
 
-[期末综合大作业](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/CompilationPrinciple/FinalHomework.zip)
+[期末综合大作业](@cos/Y1S2/CompilationPrinciple/FinalHomework.zip)
 
-[平时作业](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/CompilationPrinciple/GeneralHomework.zip)
+[平时作业](@cos/Y1S2/CompilationPrinciple/GeneralHomework.zip)
 
-[课上PPT](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/CompilationPrinciple/PPT.zip)
+[课上PPT](@cos/Y1S2/CompilationPrinciple/PPT.zip)
 
-[练习PPT](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/CompilationPrinciple/Practice.zip)
+[练习PPT](@cos/Y1S2/CompilationPrinciple/Practice.zip)

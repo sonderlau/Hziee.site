@@ -2,7 +2,7 @@
 
 ---
 
-[实践作业需求和要求](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DatabaseTheory/线路系统数据库设计.pdf)
+[实践作业需求和要求](@cos/Y1S2/DatabaseTheory/线路系统数据库设计.pdf)
 
 ::: details 建表代码
 

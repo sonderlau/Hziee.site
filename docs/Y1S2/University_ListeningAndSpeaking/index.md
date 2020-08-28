@@ -10,7 +10,7 @@
 
 ## 课程考核安排
 
-[2020年3月 课程考核安排](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/University_ListeningAndSpeaking/课程考核安排.zip)
+[2020年3月 课程考核安排](@cos/Y1S2/University_ListeningAndSpeaking/课程考核安排.zip)
 
 WARNING
 

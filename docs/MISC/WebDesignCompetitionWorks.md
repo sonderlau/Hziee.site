@@ -6,9 +6,9 @@
 
 [展示文档](https://hziee.site/pages/MISC/WebDesignCompetitionWorks/showcase/speeches.html)
 
-[PPT 下载](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/MISC/PPTSources.zip)
+[PPT 下载](@cos/MISC/PPTSources.zip)
 
-[文档收集相关](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/MISC/Documents.zip)
+[文档收集相关](@cos/MISC/Documents.zip)
 
 :::
 

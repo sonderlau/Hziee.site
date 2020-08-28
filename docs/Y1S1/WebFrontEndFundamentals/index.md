@@ -4,7 +4,7 @@
 
 ::: tip 资源
 
-[大作业合集下载](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S1/WebFrontEndFundamentals/FinalHomework.zip)
+[大作业合集下载](@cos/Y1S1/WebFrontEndFundamentals/FinalHomework.zip)
 
 :::
 

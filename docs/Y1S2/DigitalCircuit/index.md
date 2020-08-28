@@ -12,6 +12,6 @@
 
 ## 资源地址
 
-- [PPT](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DigitalCircuit/PPT.zip)
-- [课后练习](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DigitalCircuit/课后练习.zip)
-- [超星作业答案合集](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S2/DigitalCircuit/超星作业答案.zip)
+- [PPT](@cos/Y1S2/DigitalCircuit/PPT.zip)
+- [课后练习](@cos/Y1S2/DigitalCircuit/课后练习.zip)
+- [超星作业答案合集](@cos/Y1S2/DigitalCircuit/超星作业答案.zip)

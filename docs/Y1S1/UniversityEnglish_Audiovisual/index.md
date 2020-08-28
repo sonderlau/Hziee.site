@@ -6,4 +6,4 @@
 
 ------
 
-[个人课堂分享 PPT 稿子合集](https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com/Y1S1/UniversityEnglish_Audiovisual/ClassroomSharingWork.zip)
+[个人课堂分享 PPT 稿子合集](@cos/Y1S1/UniversityEnglish_Audiovisual/ClassroomSharingWork.zip)
