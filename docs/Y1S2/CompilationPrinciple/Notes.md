@@ -997,12 +997,12 @@ LR 分析器的逻辑结构
 #### 分析器运行
 
 - 根据当前栈顶状态符号与输入符号查分析表决定下一步动作
-- 把栈中符号序列和剩余输入串看成一个二元式格局,初始格局表示为 $( s_0,a_1a_2 \dots a_n \$ )$
+- 把栈中符号序列和剩余输入串看成一个二元式格局,初始格局表示为 $( s_0,a_1a_2 \dots a_n  )$
 - 假设当前 $(s_0 X_1 X_2 s_2 \dots X_m s_m, \; a_ia_{i+1} \dots a_n \$)$
   - $ACTION[s_m,a_i] = shift \; s$
     - 二元式变为 $(s_0 X_1 X_2 s_2 \dots X_m s_ma_is, \; a_{i+1}\dots a_n \$)$
   - $ACTION[s_m,a_i] = reduce \; A \rightarrow \beta$
-    - 假设 $|\beta| = r$ 则二元式变为 $(s_0 X_1 X_2 s_2 \dots X_{m-r} s_{m-r} As, \; a_ia_{i+1}\dots a_n \$)$
+    - 假设 $|\beta| = r$ 则二元式变为 $(s_0 X_1 X_2 s_2 \dots X_{m-r} s_{m-r} As, a_ia_{i+1}\dots a_n \$)$
     - 其中 $s = GOTO[s_{m-r},A] , \beta = X_{m-r}X_{m-r+2}\dots X_m$
 
 LR 分析的关键问题是如何构造分析表 不同的构造方法形成不同的分析方法
