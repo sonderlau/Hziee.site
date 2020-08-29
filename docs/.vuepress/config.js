@@ -1,14 +1,39 @@
 module.exports = {
   title: "Hziee Survival Guide",
   description: "在线文档",
-  head: [["link", { rel: "icon", href: "/atom_64x64.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/atom.png" }],
+    ["link", { rel: "manifest", href: "/manifest.json" }],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
+    [
+      "link",
+      { rel: "apple-touch-icon", href: "/icons/152x152_atom.png" },
+    ],
+    [
+      "meta",
+      {
+        name: "msapplication-TileImage",
+        content: "/icons/144x144_atom.png",
+      },
+    ],
+    ["meta", { name: "msapplication-TileColor", content: "#000000" }],
+  ],
   markdown: {
-    plugins: [["markdown-it-replace-link"], ["markdown-it-sub"], ['markdown-it-sup']],
+    plugins: [
+      ["markdown-it-replace-link"],
+      ["markdown-it-sub"],
+      ["markdown-it-sup"],
+    ],
     extendMarkdown: (md) => {
       md.set({ breaks: true });
       md.use(require("markdown-it-sub"));
-      md.use(require('markdown-it-sup'));
-      md.use(require('markdown-it-task-lists'))
+      md.use(require("markdown-it-sup"));
+      md.use(require("markdown-it-task-lists"));
       md.use(require("markdown-it-replace-link"), {
         replaceLink: function(link, env) {
           // 云端存储的替换
@@ -81,7 +106,7 @@ module.exports = {
       "@maginapp/vuepress-plugin-katex",
       {
         delimiters: "dollars",
-        strict: false
+        strict: false,
       },
     ],
   ],
