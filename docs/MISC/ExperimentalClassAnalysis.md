@@ -440,7 +440,7 @@ void pro( long long j,long long k,long long l)
     int f(int n, int m){
         return n ** 1 ? n : (f(n - 1, m) + m - 1) % n + 1;
     }
-    ```
+```
 
   + 确实很巧妙的解法 但并不适用于本题 因为其题目都是求最后一个活下来的是谁 而本题要求出第几个出去的问题
 
@@ -635,7 +635,7 @@ return 0;
 
 -
 
-![燕尾定理](https://bkimg.cdn.bcebos.com/pic/b58f8c5494eef01fee3893ade3fe9925bc317dae?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5)
+![燕尾定理](./ywdl.gif)
 
 - > 燕尾定理：在三角形 ABC 中,AD,BE,CF 相交于同一点 O,有
 
