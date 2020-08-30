@@ -72,6 +72,7 @@ module.exports = {
     [
       "graysite",
       {
+        // Nanking Rip
         startDate: "2020-12-13 00:00:00",
         endDate: "2020-12-13 23:59:59",
       },
@@ -94,8 +95,7 @@ module.exports = {
     [
       "@maginapp/vuepress-plugin-katex",
       {
-        delimiters: "dollars",
-        strict: false,
+        delimiters: "dollars"
       },
     ],
   ],
