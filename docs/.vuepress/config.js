@@ -10,10 +10,7 @@ module.exports = {
       "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
-    [
-      "link",
-      { rel: "apple-touch-icon", href: "/icons/152x152_atom.png" },
-    ],
+    ["link", { rel: "apple-touch-icon", href: "/icons/152x152_atom.png" }],
     [
       "meta",
       {
@@ -92,14 +89,6 @@ module.exports = {
       {
         noCopy: true, // 选c中的文字将无法被复制
         minLength: 100, // 如果长度超过 100 个字符
-      },
-    ],
-    [
-      "vuepress-plugin-clean-urls",
-      {
-        normalSuffix: "",
-        indexSuffix: "/",
-        notFoundPath: "/404.min.html",
       },
     ],
     [
