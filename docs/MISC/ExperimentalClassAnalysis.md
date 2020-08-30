@@ -635,7 +635,7 @@ return 0;
 
 -
 
-![燕尾定理](./ywdl.webp)
+![燕尾定理](./ywdl.jpg)
 
 - > 燕尾定理：在三角形 ABC 中,AD,BE,CF 相交于同一点 O,有
 
