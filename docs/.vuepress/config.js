@@ -100,6 +100,10 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    algolia:{
+      apiKey:'6776e9b86b29ea2ab58076a7a5795832',
+      indexName:'hziee'
+    },
     lastUpdated: "Last Updated",
     sidebar: "auto",
     nav: [
