@@ -104,6 +104,7 @@ module.exports = {
       apiKey:'6776e9b86b29ea2ab58076a7a5795832',
       indexName:'hziee'
     },
+    smoothScroll: true,
     lastUpdated: "Last Updated",
     sidebar: "auto",
     nav: [
