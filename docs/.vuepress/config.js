@@ -60,16 +60,6 @@ module.exports = {
     "img-lazy",
     "vuepress-plugin-baidu-autopush",
     [
-      "vuepress-plugin-zooming",
-      {
-        delay: 650,
-        options: {
-          bgColor: "black",
-          zIndex: 10000,
-        },
-      },
-    ],
-    [
       "graysite",
       {
         // Nanking Rip
@@ -98,6 +88,17 @@ module.exports = {
         delimiters: "dollars"
       },
     ],
+    [
+      'vuepress-plugin-medium-zoom',
+      {
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: '#f1f3f8',
+          scrollOffset: 0,
+        },
+      },
+    ]
   ],
   themeConfig: {
     algolia:{
