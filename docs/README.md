@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /atom.png
-heroText: HZIEE 计科生存指南
+heroText: Hziee 计科生存指南
 tagline: 我什么都不会...ohh 还是会一点点的咯 !
 actionText: 开始摸鱼 →
 actionLink: /about.md

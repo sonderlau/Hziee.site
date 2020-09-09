@@ -219,13 +219,13 @@ e.g. 二进制字母表 ASCII 字符集 Unicode 字符集
 
 ##### 乘积 Product
 
-$\sum_1 \sum_2 = \{ ab | a \in \sum_1 , b \in \sum_2 \} $
+$\sum_1 \sum_2 = \{ ab | a \in \sum_1 , b \in \sum_2 \}$
 
 #### n 次幂 Power
 
 $\sum^0 = { \epsilon }$
 
-$ \sum ^n = \sum^{n-1} \sum , n\geqslant 1 $
+$\sum ^n = \sum^{n-1} \sum , n\geqslant 1$
 
 **长度为 n 的符号串构成的集合**
 
@@ -319,9 +319,9 @@ $$
 
 > ![image-20200517151930075](./images/image-20200517151930075.png)
 
-- $\alpha \Rightarrow^0 \alpha$
-- $\Rightarrow^+$ 表示经过整数步的推导
-- $\Rightarrow^*$ 表示经过若干步(可以为 0)步推导
+- $\alpha \overset{0}{\Rightarrow} \alpha$
+- $\overset{+}{\Rightarrow}$ 表示经过整数步的推导
+- $\overset{*}{\Rightarrow}$ 表示经过若干步(可以为 0)步推导
 
 **最右推导 称为 规范推导**
 
@@ -329,13 +329,13 @@ $$
 
 ### 句型 和 句子
 
-$if \; S \Rightarrow ^ * \alpha ,\alpha \in (V_T \cup V_N)^*$
+$if \; S \overset{*}{\Rightarrow} \alpha ,\alpha \in (V_T \cup V_N)^*$
 
 称$\alpha$是$G$的一个**句型 sentential form**
 
 - 一个句型中可以包含**终结符** 也可以包含**非终结符** 也可以是**空串**
 
-$if \; S = \Rightarrow ^* w , w \in V_T ^*$ 称 $w$是$G$ 的一个**句子 sentence**
+$if \; S \overset{*}{\Rightarrow} w , w \in V_T ^*$ 称 $w$是$G$ 的一个**句子 sentence**
 
 - 句子是**不包含非终结符的句型**
 
@@ -390,8 +390,8 @@ $$
 #### 3 型文法 Type-3 Grammar
 
 $$
-Right \ Linear : A \rightarrow wB \ or \ A \rightarrow w \\
-Left \ Linear : A \rightarrow Bw \ or \ A \rightarrow w
+Right \ Linear : A \rightarrow wB \enspace or \enspace A \rightarrow w \\
+Left \ Linear : A \rightarrow Bw \enspace or \enspace A \rightarrow w
 $$
 
 **正则语言 3 型语言**
@@ -597,7 +597,7 @@ $$
 #### DFA 的化简 \ 最小化
 
 - 为 DFA 寻找一个状态数比较少的等价 DFA
-- **任何 DFA （或 NFA）都存在（唯一）一个状态数最少的 DFA 与之等价 **
+- **任何 DFA （或 NFA）都存在（唯一）一个状态数最少的 DFA 与之等价**
 
 ##### 求同法
 
@@ -611,7 +611,7 @@ $$
 
 ##### 求异法
 
-- 首先把 DFA D 的状态集划分为非接受状态组和接受状态组,作为初始划分 П
+- 首先把 DFA 的状态集划分为非接受状态组和接受状态组,作为初始划分 П
 
 - 执行以下过程
 
@@ -686,24 +686,24 @@ $$
 > - $X \rightarrow \epsilon$ 则把$\epsilon$ 加入到 `FIRST(X)`
 > - $X \rightarrow Y_1Y_2\dots Y_k$
 >   - 把$FIRST (Y_1) - \{ \epsilon \}$ 放入到 `FIRST(X)`
->   - 如果 $Y_1 \Rightarrow^{*} \epsilon$ 则把 $FIRST (Y_2) - \{ \epsilon \}$ 加入到 `FIRST(X)`
->   - 如果 $Y_1 Y_2 \Rightarrow^{*} \epsilon$ 则把 $FIRST (Y_3) - \{ \epsilon \}$ 加入到 `FIRST(X)`
+>   - 如果 $Y_1 \overset{*}{\Rightarrow}\epsilon$ 则把 $FIRST (Y_2) - \{ \epsilon \}$ 加入到 `FIRST(X)`
+>   - 如果 $Y_1 Y_2 \overset{*}{\Rightarrow} \epsilon$ 则把 $FIRST (Y_3) - \{ \epsilon \}$ 加入到 `FIRST(X)`
 >   - ....
->   - 如果 $Y_1Y_2 \dots Y_{k-1} Y_{k} \Rightarrow^ \epsilon$ 则把 $  \epsilon$ 加入到 `FIRST(X)`
+>   - 如果 $Y_1Y_2 \dots Y_{k-1} Y_{k}  \overset{\epsilon}{\Rightarrow}$ 则把 $\epsilon$ 加入到 `FIRST(X)`
 
 #### Follow 集
 
 构造`FOLLOW(A)`
 
-> 如果 $X \rightarrow AB$ 则 $FIRST(B) \subseteq FOLLOW(A) \quad FOLLOW(X) \subseteq FOOLOW(B)$
+> 如果 $X \rightarrow AB$ 则 $FIRST(B) \subseteq FOLLOW(A) \quad$且  $FOLLOW(X) \subseteq FOOLOW(B)$
 >
-> 如果 $B \Rightarrow^{*} \epsilon$ 则 $FOLLOW(X) \subseteq FOLLOW(A)$
+> 如果 $B \overset{*}{\Rightarrow} \epsilon$ 则 $FOLLOW(X) \subseteq FOLLOW(A)$
 >
-> 若 S 是开始符号 则 $ \$ \in FOLLOW(S) $ \$是输入右端的结束符号
+> 若 S 是开始符号 则 $\$ \in FOLLOW(S)$ 注: $ 是输入右端的结束符号
 >
 > 如果 $A \rightarrow aB\beta$ 将 $FIRST(\beta) - \{\epsilon\}$放入 $FOLLOW(B)$
 >
-> 如果 $A \rightarrow aB \; or \; A \rightarrow aB\beta \ (\beta \Rightarrow^{*} \epsilon)$ 将 $FOLLOW(A)$放入 $FOLLOW(B)$中
+> 如果 $A \rightarrow aB \; or \; A \rightarrow aB\beta \ (\beta \overset{*}{\Rightarrow} \epsilon)$ 将 $FOLLOW(A)$放入 $FOLLOW(B)$中
 
 #### SELECT 集
 
@@ -711,7 +711,7 @@ $A \rightarrow a ,A \in V_N, a \in V^*$
 
 > 若 $a \nRightarrow ^ * \epsilon$ 则 $SELECT(A \rightarrow a) = FIRST(a)$
 >
-> 若 $a \Rightarrow^* \epsilon$ 则 $SELECT (A \rightarrow a) = ( FIRST(a) - \{ \epsilon\} ) \cup FOLLOW(A)$
+> 若 $a  \overset{*}{\Rightarrow} \epsilon$ 则 $SELECT (A \rightarrow a) = ( FIRST(a) - \{ \epsilon\} ) \cup FOLLOW(A)$
 
 #### LL(1) 文法
 
@@ -775,7 +775,7 @@ e.g.
 
 > 形如
 >
-> $A \rightarrow Aa | \beta $ 的产生式或 $A \Rightarrow ^+ Aa$ 的推导
+> $A \rightarrow Aa | \beta$ 的产生式或 $A \Rightarrow ^+ Aa$ 的推导
 
 ###### 直接左递归
 
@@ -852,9 +852,9 @@ $A_1A_2A_3\dots A_n$
 - `a =· b`
   - 当且仅当 G 中含有如 $A \rightarrow \dots ab \dots$ 或者 $A \rightarrow \dots aBb \dots$ 的产生式
 - `a <· b`
-  - 当且仅当 G 中含有形如 $A \rightarrow \dots aB \dots$ 的产生式 且有 $B \Rightarrow ^* b \dots $ 或者 $B \Rightarrow ^* Cb$
+  - 当且仅当 G 中含有形如 $A \rightarrow \dots aB \dots$ 的产生式 且有 $B \overset{*}{\Rightarrow} b \dots$ 或者 $B \overset{*}{\Rightarrow} Cb$
 - `a ·> b`
-  - 当且仅当 G 中含有形如 $A \rightarrow \dots Bb \dots$ 的产生式 且有 $B \Rightarrow^+ \dots a$ 或者 $B \Rightarrow ^+ \dots aC$
+  - 当且仅当 G 中含有形如 $A \rightarrow \dots Bb \dots$ 的产生式 且有 $B \overset{+}{\Rightarrow} \dots a$ 或者 $B \overset{+}{\Rightarrow} \dots aC$
 
 若一个算符文法 G 的任意两个终结符好之间最多只有 `=· ·> <·` 三种关系中的一种 则称 G 为 **算符优先文法**
 
@@ -863,9 +863,9 @@ $A_1A_2A_3\dots A_n$
 - 由定义直接构造
 - 通过计算 `FIRSTVT`集 与 `LASTVT` 集 构造
 
-  - $FIRSTVT(B) = \{ b| B \Rightarrow^+ b \dots \; or \; B \Rightarrow^+ Cb \dots \}$
+  - $FIRSTVT(B) = \{ b| B \overset{+}{\Rightarrow} b \dots \; or \; B \overset{+}{\Rightarrow} Cb \dots \}$
     - 对于非终结符 B 其往下推导所可能出现的首个终结符
-  - $LASTVT(B) = \{ a | B \Rightarrow ^+ \dots a \; or \; B \Rightarrow^+ \dots aC \}$
+  - $LASTVT(B) = \{ a | B \overset{+}{\Rightarrow} \dots a \; or \; B \overset{+}{\Rightarrow} \dots aC \}$
     - 对于非终结符 B 其往下推导所可能出现的最后一个终结符
 
 * `a =· b`

@@ -24,7 +24,8 @@
     "vuepress-plugin-graysite": "^0.1.0",
     "vuepress-plugin-img-lazy": "^1.0.4",
     "vuepress-plugin-smooth-scroll": "^0.0.9",
-    "vuepress-plugin-zooming": "^1.1.7"
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-hope": "^0.7.2"
   },
   "dependencies": {
     "markdown-it-sub": "^1.0.0",
