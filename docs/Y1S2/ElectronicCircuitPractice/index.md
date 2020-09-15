@@ -10,7 +10,7 @@
 
 ## 电路板焊接
 
-::: details
+::: details 成品参考
 
 ![背面](./assets/back.jpg)
 

@@ -30,9 +30,6 @@ module.exports = resolve({
       ],
       extendMarkdown: (md) => {
         md.set({ breaks: true });
-        md.use(require("markdown-it-sub"));
-        md.use(require("markdown-it-sup"));
-        md.use(require("markdown-it-task-lists"));
         md.use(require("markdown-it-replace-link"), {
           replaceLink: function(link, env) {
             // 云端存储的替换
@@ -49,11 +46,17 @@ module.exports = resolve({
       },
     },
     plugins: [
-        
+      // ['@vuepress/pwa',{
+      //   serviceWorker: true,
+      //   updatePopup: {
+      //     message: '内容已更新 推荐更新到最新内容',
+      //     buttonText:'刷新页面'
+      //   }
+      // }]
     ],
     themeConfig: {
       blog:false,
-      logo:'atom.png',
+      logo:'./atom.png',
       algolia:{
         apiKey:'6776e9b86b29ea2ab58076a7a5795832',
         indexName:'hziee'
