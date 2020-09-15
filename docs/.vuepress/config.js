@@ -125,6 +125,10 @@ module.exports = resolve({
               text: "大学英语_视听说",
               link: "University_ListeningAndSpeaking/",
             },
+            {
+              text: '电子线路实习',
+              link: 'ElectronicCircuitPractice/'
+            }
           ],
         },
         {
