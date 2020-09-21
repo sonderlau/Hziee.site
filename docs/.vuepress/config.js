@@ -133,7 +133,7 @@ module.exports = resolve({
         },
         {
           text: "大二 第一学期",
-          prefix:"/M2S1/"
+          prefix:"/M2S1/",
           items: [{ text: "数据结构", link: "/" },{ text:'C++高级程序设计', link:'/'}],
         },
         {
