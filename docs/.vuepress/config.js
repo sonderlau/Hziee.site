@@ -27,9 +27,11 @@ module.exports = resolve({
         ["markdown-it-replace-link"],
         ["markdown-it-sub"],
         ["markdown-it-sup"],
+        ["markdown-it-task-lists"]
       ],
       extendMarkdown: (md) => {
         md.set({ breaks: true });
+        md.use(require('markdown-it-task-lists'))
         md.use(require("markdown-it-replace-link"), {
           replaceLink: function(link, env) {
             // 云端存储的替换
@@ -46,17 +48,10 @@ module.exports = resolve({
       },
     },
     plugins: [
-      // ['@vuepress/pwa',{
-      //   serviceWorker: true,
-      //   updatePopup: {
-      //     message: '内容已更新 推荐更新到最新内容',
-      //     buttonText:'刷新页面'
-      //   }
-      // }]
     ],
     themeConfig: {
       blog:false,
-      logo:'./atom.png',
+      logo:'atom.png',
       algolia:{
         apiKey:'6776e9b86b29ea2ab58076a7a5795832',
         indexName:'hziee'
@@ -76,8 +71,10 @@ module.exports = resolve({
       smoothScroll: true,
       lastUpdated: "Last Updated",
       sidebar: "auto",
+      sidebarDepth: 3,
       nav: [
         { text: "主页", link: "/" },
+        {text:'关于',link:'About.md'},
         {
           text: "杂项归档",
           items: [
@@ -136,7 +133,8 @@ module.exports = resolve({
         },
         {
           text: "大二 第一学期",
-          items: [{ text: "TBD", link: "/" }],
+          prefix:"/M2S1/"
+          items: [{ text: "数据结构", link: "/" },{ text:'C++高级程序设计', link:'/'}],
         },
         {
           text: "文档项目",
