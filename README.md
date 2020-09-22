@@ -7,11 +7,12 @@
 如 `math.md` 文件夹使用 `math.assets` 文件夹内的图片
 
 > │ math.md
-> ├─math.assets
->
-> ​		├─ logx.png
->
-> ​		└─ limit_sinx.jpeg
+> 
+> ├─  math.assets
+> 
+> ​      ├──  logx.png
+> 
+> ​      └──  limit_sinx.jpeg
 
 使用超过 **1M** 以上大小的文件 
 
