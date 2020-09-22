@@ -51,7 +51,7 @@ module.exports = resolve({
     ],
     themeConfig: {
       blog:false,
-      logo:'atom.png',
+      logo:'https://hziee.site/atom.png',
       algolia:{
         apiKey:'6776e9b86b29ea2ab58076a7a5795832',
         indexName:'hziee'
@@ -134,11 +134,11 @@ module.exports = resolve({
         {
           text: "大二 第一学期",
           prefix:"/M2S1/",
-          items: [{ text: "数据结构", link: "/" },{ text:'C++高级程序设计', link:'/'}],
+          items: [{ text: "数据结构", link: "DataScrutcure/" },{ text:'C++高级程序设计', link:'CPP'}],
         },
         {
-          text: "文档项目",
-          link: "https://github.com/sonderlau/HzieeSurvivalGuide",
+          text: "项目地址",
+          link: "https://github.com/sonderlau/Hziee.site",
         },
       ],
     },
