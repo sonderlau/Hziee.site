@@ -6,13 +6,16 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+      
+    - name: Build Project
+      run: |
+        yarn install
+        yarn run docs:build 
 
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.HZIEE }}
-        TARGET_REPO: sonderlau/sonderlau.github.io
-        TARGET_BRANCH: master
-        BUILD_SCRIPT: yarn install && npm run docs:build
-        BUILD_DIR: docs/.vuepress/dist
-        CNAME: hziee.site
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ftp://ftb.cname-cdn.com:1016
+        ftp-username: 	sonderlau
+        ftp-password: ${{ secrets.FTP_PW }}
+        local-dir: docs/.vuepress/dist
