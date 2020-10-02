@@ -15,7 +15,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftb.cname-cdn.com:1016/web/
+        ftp-server: ftp://ftB.cname-cdn.com:1041/wwwroot/
         ftp-username: sonderlau
         ftp-password: ${{ secrets.FTP_PW }}
         local-dir: docs/.vuepress/dist
