@@ -9,7 +9,7 @@ jobs:
       
     - name: Build Project
       run: |
-            yarn add 
+            yarn
             yarn run docs:build 
         
     - uses: actions/checkout@v2
