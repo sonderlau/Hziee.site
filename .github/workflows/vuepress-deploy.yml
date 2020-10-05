@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@master
       
     - name: Build Project
-      run: yarn install yarn run docs:build 
+      run: yarn add && yarn run docs:build 
         
     - uses: actions/checkout@v2
     - name: Upload ftp
