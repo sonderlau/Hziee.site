@@ -19,3 +19,4 @@ jobs:
         ftp-username: sonderlau
         ftp-password: ${{ secrets.FTP_PW }}
         local-dir: docs/.vuepress/dist
+        git-ftp-args: --all --insecure 
