@@ -8,15 +8,14 @@ jobs:
       uses: actions/checkout@master
       
     - name: Build Project
-      run: |
-        yarn install
-        yarn run docs:build 
-
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      run: yarn install yarn run docs:build 
+        
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        ftp-server: ftp://ftB.cname-cdn.com:1041/wwwroot/
-        ftp-username: sonderlau
-        ftp-password: ${{ secrets.FTP_PW }}
-        local-dir: docs/.vuepress/dist
-        git-ftp-args: --all --insecure 
+        host: ftp://ftB.cname-cdn.com:1041
+        user: sonderlau
+        password: ${{ secrets.FTP_PW }}
+        localDir: "docs/.vuepress/dist"
+        remoteDir: "wwwroot"
