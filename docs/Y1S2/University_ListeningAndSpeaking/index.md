@@ -24,12 +24,12 @@ WARNING
 
 课上分享和口语内容也是算做平时分的
 
-[New English with Speaking](./WeeklySpeeches/[01]NewEnglishWithSpeaking.md)
+[New English with Speaking](./WeeklySpeeches/1_NewEnglishWithSpeaking.md)
 
-[2019-nCoV](./WeeklySpeeches/[02]2019nCoV.md)
+[2019-nCoV](./WeeklySpeeches/2_2019nCoV.md)
 
-[Why Zoning Out is Good for You](./WeeklySpeeches/[03]WhyZoningOutisGoodforYou.md)
+[Why Zoning Out is Good for You](./WeeklySpeeches/3_WhyZoningOutisGoodforYou.md)
 
-[Why you still not in a relationship](./WeeklySpeeches/[04]Whyyoustillnotinarelationship.md)
+[Why you still not in a relationship](./WeeklySpeeches/4_Whyyoustillnotinarelationship.md)
 
-[Role_Play](./WeeklySpeeches/[05]Role_Play.md)
+[Role_Play](./WeeklySpeeches/5_Role_Play.md)
