@@ -4,21 +4,18 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      
-    - name: Yarn running
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: install # will run `yarn install` command
+          cmd: install 
       - uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: docs:build # will run `yarn build` command
+          cmd: docs:build 
         
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: ftp://ftB.cname-cdn.com:1041/wwwroot/
-        ftp-username: sonderlau
-        ftp-password: ${{ secrets.FTP_PW }}
-        local-dir: docs/.vuepress/dist/ 
-        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
+      - uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ftp://ftB.cname-cdn.com:1041/wwwroot/
+          ftp-username: sonderlau
+          ftp-password: ${{ secrets.FTP_PW }}
+          local-dir: docs/.vuepress/dist/ 
+          git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
