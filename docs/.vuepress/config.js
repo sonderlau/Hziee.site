@@ -48,6 +48,13 @@ module.exports = resolve({
       },
     },
     plugins: [
+      ['@vuepress/pwa',{
+        serviceWorker:true,
+        updatePop: {
+          message:"有新内容可用",
+          buttonText:"更新"
+        }
+      }]
     ],
     themeConfig: {
       blog:false,
@@ -68,28 +75,30 @@ module.exports = resolve({
         sub: true,
         sup: true
       },
+      pwa:false,
       smoothScroll: true,
       lastUpdated: "Last Updated",
       sidebar: "auto",
       sidebarDepth: 3,
       nav: [
         { text: "主页", link: "/" },
-        {text:'关于',link:'About.md'},
+        {text:'关于',link:'/About.md'},
         {
           text: "杂项归档",
           items: [
-            { text: "报道事项", link: "/MISC/SchoolRegister.md" },
-            { text: "网页设计比赛", link: "/MISC/WebDesignCompetitionWorks.md" },
+            { text: "报道事项", link: "/MISC/SchoolRegister" },
+            { text: "网页设计比赛", link: "/MISC/WebDesignCompetitionWorks" },
             {
               text: "实验班相关",
+              prefix:"/MISC/",
               items: [
                 {
                   text: "实验班备战相关",
-                  link: "/MISC/ExperimentalClassPreparation.md",
+                  link: "ExperimentalClassPreparation",
                 },
                 {
                   text: "实验班招生题解",
-                  link: "/MISC/ExperimentalClassAnalysis.md",
+                  link: "ExperimentalClassAnalysis",
                 },
               ],
             },

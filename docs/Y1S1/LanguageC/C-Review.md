@@ -14,7 +14,7 @@
 
 基本的数据类型大同小异了 不赘述 贴上 Java 相关内容的链接
 
-[Java Final Review :: 数据类型](http://9up.fun/JavaFinalReview/#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+[Java Final Review :: 数据类型](https://hziee.site/Y1S1/LanguageJava/JavaFinalReview/#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
 
 ### printf 输出函数
 
