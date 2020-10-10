@@ -81,8 +81,7 @@ module.exports = resolve({
       sidebar: "auto",
       sidebarDepth: 3,
       nav: [
-        { text: "主页", link: "/" },
-        {text:'关于',link:'/About.md'},
+        { text: "主页", link: "/" }, 
         {
           text: "杂项归档",
           items: [
