@@ -107,32 +107,42 @@
 **Cpp**
 
 ```cpp
-#include<iostream>
-#include<string>
-#include<cstring>
-#include<cstdio>
-#define _for(i,a,b) for(int i=a;i<b;i++)
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <cstdio>
+#define _for( i, a, b ) for ( int i = a; i < b; i++ )
 #define LL long long
 using namespace std;
 int main()
 {
-    string a;
-    cin>>a;
-    LL o,r,z;
-    LL ans=0;
-    o=r=z=0;
-    _for(i,0,a.length())
-    {
-    if(a[i]**'Z'){z++;}
-    }
-    _for(i,0,a.length())
-    {
-        if(a[i]**'O'){o++;}
-        if(a[i]**'R'){ans+=o*z;}
-        if(a[i]**'Z')z--;
-    }
-    cout<<ans<<endl;
-    return 0;
+	string a;
+	cin >> a;
+	LL	o, r, z;
+	LL	ans = 0;
+	o = r = z = 0;
+	_for( i, 0, a.length() )
+	{
+		if ( a[i] * *'Z' )
+		{
+			z++;
+		}
+	}
+	_for( i, 0, a.length() )
+	{
+		if ( a[i] * *'O' )
+		{
+			o++;
+		}
+		if ( a[i] * *'R' )
+		{
+			ans += o * z;
+		}
+		if ( a[i] * *'Z' )
+			z--;
+	}
+	cout << ans << endl;
+	return(0);
 }
 ```
 
@@ -202,45 +212,52 @@ int main()
 **Cpp**
 
 ```cpp
-#include<iostream>
-#include<cstring>
-#include<algorithm>
-#include<string>
-#include<cstdio>
-#include<vector>
-#include<map>
-#define _for(i,a,b) for(int i=a;i<b;i++)
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+#include <string>
+#include <cstdio>
+#include <vector>
+#include <map>
+#define _for( i, a, b ) for ( int i = a; i < b; i++ )
 #define LL long long
 using namespace std;
-LL measure(LL x,LL y);
+LL measure( LL x, LL y );
+
+
 int main()
 {
-LL s1,s2,s3,T;
-cin>>T;
-_for(i,0,T)
-{
-    cin>>s1>>s2>>s3;
-    LL ans1=s1*s2*s3*s3*2+s1*s2*s2*s3+s1*s1*s2*s3;
-    LL ans2=s3*s3*s3-s1*s2*s3;
-    //cout<<"1:"<<ans1<<" 2:"<<ans2<<endl;
-    if(ans1<0 or ans2<=0){cout<<"-1"<<endl;continue;}
-    LL t=measure(ans1,ans2);
-    ans1/=t;ans2/=t;
-    ans1+=ans2*(s1+s2+s3);
-    cout<<ans1<<" "<<ans2<<endl;
+	LL s1, s2, s3, T;
+	cin >> T;
+	_for( i, 0, T )
+	{
+		cin >> s1 >> s2 >> s3;
+		LL	ans1	= s1 * s2 * s3 * s3 * 2 + s1 * s2 * s2 * s3 + s1 * s1 * s2 * s3;
+		LL	ans2	= s3 * s3 * s3 - s1 * s2 * s3;
+		/* cout<<"1:"<<ans1<<" 2:"<<ans2<<endl; */
+		if ( ans1 < 0 or ans2 <= 0 )
+		{
+			cout << "-1" << endl; continue;
+		}
+		LL t = measure( ans1, ans2 );
+		ans1	/= t; ans2 /= t;
+		ans1	+= ans2 * (s1 + s2 + s3);
+		cout << ans1 << " " << ans2 << endl;
+	}
+	return(0);
 }
-return 0;
-}
-LL measure(LL x,LL y)
+
+
+LL measure( LL x, LL y )
 {
-    LL temp=y;
-    while(x%y!=0)
-    {
-        temp=x%y;
-        x=y;
-        y=temp;
-    }
-    return temp;
+	LL temp = y;
+	while ( x % y != 0 )
+	{
+		temp	= x % y;
+		x	= y;
+		y	= temp;
+	}
+	return(temp);
 }
 ```
 
@@ -372,42 +389,56 @@ LL measure(LL x,LL y)
 **Cpp**
 
 ```cpp
-#include<iostream>
-#define _for(i,a,b) for(int i=a;i<b;i++)
+#include <iostream>
+#define _for( i, a, b ) for ( int i = a; i < b; i++ )
 using namespace std;
-void pro( long long j,long long k,long long l);
-//long long measure(long long a,long long b);
+void pro( long long j, long long k, long long l );
+
+
+/* long long measure(long long a,long long b); */
 int main()
 {
-int T;
-long long a,b,c;
-cin>>T;
-_for(i,0,T)
+	int		T;
+	long long	a, b, c;
+	cin >> T;
+	_for( i, 0, T )
+	{
+		cin >> a >> b >> c;
+		pro( a, b, c );
+		cout << endl;
+	}
+	return(0);
+}
+
+
+long long measure( long long x, long long y )
 {
-cin>>a>>b>>c;
-pro(a,b,c);
-cout<<endl;
+	long long z = y;
+	while ( x % y != 0 )
+	{
+		z	= x % y;
+		x	= y;
+		y	= z;
+	}
+	return(z);
 }
-return 0;
-}
-long long measure(long long x,long long y)
-{   long long z = y;
-    while(x%y!=0)
-    {
-        z = x%y;
-        x = y;
-        y = z;
-    }
-    return z;
-}
-void pro( long long j,long long k,long long l)
-{   if(l>j or k>j){cout<<"0";return;}
-    long long gdc=measure(k,l);
-    long long gcd=k/gdc*l;
-    if(gcd>j){cout<<"0";return;}
-    j=j/gcd;
-    cout<<j;
-    return;
+
+
+void pro( long long j, long long k, long long l )
+{
+	if ( l > j or k > j )
+	{
+		cout << "0"; return;
+	}
+	long long	gdc	= measure( k, l );
+	long long	gcd	= k / gdc * l;
+	if ( gcd > j )
+	{
+		cout << "0"; return;
+	}
+	j = j / gcd;
+	cout << j;
+	return;
 }
 ```
 
@@ -431,9 +462,8 @@ void pro( long long j,long long k,long long l)
 
   - 我最近也在微信公众号上找到了该问题的不错解答 [五分钟学算法](https://hziee.site/pages/MISC/ExperimentalClassAnalysisOfTheQuestions/weixin)
 
-  - 其甚至给出了一行解决的代码
+  - 其给出了一行解决的代码
 
-  -
 
 ````java
 
@@ -442,9 +472,9 @@ void pro( long long j,long long k,long long l)
     }
 ```
 
-  + 确实很巧妙的解法 但并不适用于本题 因为其题目都是求最后一个活下来的是谁 而本题要求出第几个出去的问题
+- 确实很巧妙的解法 但并不适用于本题 因为其题目都是求最后一个活下来的是谁 而本题要求出第几个出去的问题
 
-  + 可以尝试使用数组或者是环形链表 每次出局的人进行移除处理 通过变量自增 若满足情况即输出即可
+- 可以尝试使用数组或者是环形链表 每次出局的人进行移除处理 通过变量自增 若满足情况即输出即可
 
 * 细节:
 
@@ -582,44 +612,48 @@ void pro( long long j,long long k,long long l)
 **Cpp **
 
 ```cpp
-#include<iostream>
-#include<algorithm>
-#include<cstring>
-#include<cstdio>
-#define _for(i,a,b) for(int i=a;i<b;i++)
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+#include <cstdio>
+#define _for( i, a, b ) for ( int i = a; i < b; i++ )
 using namespace std;
 int main()
 {
-int T,cnt;
-int a[100],b[100],c[100],d[100],e[100];
-int m,n,q;//n:total student  m:rbq  q:q questions
-cin>>T;
-_for(i,0,T)
-{
-int cnt=1;//calc
-int an=0;
-cin>>n>>m>>q;
-_for(j,0,q)cin>>e[j];
-_for(j,0,n)
-{
-a[j]=j;	b[j]=j+1;d[j]=j-1;
-}
-b[n-1]=0;d[0]=n-1;int temp=0;
-while(n>0)
-{
-    if(cnt**m){b[a[d[temp]]]=a[b[temp]];
-    d[a[b[temp]]]=a[d[temp]];c[an]=temp+1;an++;cnt=0;n--;}
-    temp=b[temp];cnt++;
-}
-cout<<"Case #"<<i+1<<":"<<endl;
-_for(j,0,q)cout<<c[e[j]-1]<<endl;
-if(i!=T-1)cout<<endl;
-memset(a,0,sizeof(a));
-memset(b,0,sizeof(b));
-memset(c,0,sizeof(c));
-memset(d,0,sizeof(d));
-}
-return 0;
+	int	T, cnt;
+	int	a[100], b[100], c[100], d[100], e[100];
+	int	m, n, q;                /* n:total student  m:rbq  q:q questions */
+	cin >> T;
+	_for( i, 0, T )
+	{
+		int	cnt	= 1;    /* calc */
+		int	an	= 0;
+		cin >> n >> m >> q;
+		_for( j, 0, q ) cin >> e[j];
+		_for( j, 0, n )
+		{
+			a[j] = j; b[j] = j + 1; d[j] = j - 1;
+		}
+		b[n - 1] = 0; d[0] = n - 1; int temp = 0;
+		while ( n > 0 )
+		{
+			if ( cnt * *m )
+			{
+				b[a[d[temp]]]	= a[b[temp]];
+				d[a[b[temp]]]	= a[d[temp]]; c[an] = temp + 1; an++; cnt = 0; n--;
+			}
+			temp = b[temp]; cnt++;
+		}
+		cout << "Case #" << i + 1 << ":" << endl;
+		_for( j, 0, q ) cout << c[e[j] - 1] << endl;
+		if ( i != T - 1 )
+			cout << endl;
+		memset( a, 0, sizeof(a) );
+		memset( b, 0, sizeof(b) );
+		memset( c, 0, sizeof(c) );
+		memset( d, 0, sizeof(d) );
+	}
+	return(0);
 }
 ```
 
@@ -756,45 +790,52 @@ return 0;
 **Cpp**
 
 ```cpp
-#include<iostream>
-#include<cstring>
-#include<algorithm>
-#include<string>
-#include<cstdio>
-#include<vector>
-#include<map>
-#define _for(i,a,b) for(int i=a;i<b;i++)
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+#include <string>
+#include <cstdio>
+#include <vector>
+#include <map>
+#define _for( i, a, b ) for ( int i = a; i < b; i++ )
 #define LL long long
 using namespace std;
-LL measure(LL x,LL y);
+LL measure( LL x, LL y );
+
+
 int main()
 {
-LL s1,s2,s3,T;
-cin>>T;
-_for(i,0,T)
-{
-	cin>>s1>>s2>>s3;
-	LL ans1=s1*s2*s3*s3*2+s1*s2*s2*s3+s1*s1*s2*s3;
-	LL ans2=s3*s3*s3-s1*s2*s3;
-	//cout<<"1:"<<ans1<<" 2:"<<ans2<<endl;
-	if(ans1<0 or ans2<=0){cout<<"-1"<<endl;continue;}
-	LL t=measure(ans1,ans2);
-	ans1/=t;ans2/=t;
-	ans1+=ans2*(s1+s2+s3);
-	cout<<ans1<<" "<<ans2<<endl;
-}
-return 0;
-}
-LL measure(LL x,LL y)
-{
-	LL temp=y;
-	while(x%y!=0)
+	LL s1, s2, s3, T;
+	cin >> T;
+	_for( i, 0, T )
 	{
-		temp=x%y;
-		x=y;
-		y=temp;
+		cin >> s1 >> s2 >> s3;
+		LL	ans1	= s1 * s2 * s3 * s3 * 2 + s1 * s2 * s2 * s3 + s1 * s1 * s2 * s3;
+		LL	ans2	= s3 * s3 * s3 - s1 * s2 * s3;
+		/* cout<<"1:"<<ans1<<" 2:"<<ans2<<endl; */
+		if ( ans1 < 0 or ans2 <= 0 )
+		{
+			cout << "-1" << endl; continue;
+		}
+		LL t = measure( ans1, ans2 );
+		ans1	/= t; ans2 /= t;
+		ans1	+= ans2 * (s1 + s2 + s3);
+		cout << ans1 << " " << ans2 << endl;
 	}
-	return temp;
+	return(0);
+}
+
+
+LL measure( LL x, LL y )
+{
+	LL temp = y;
+	while ( x % y != 0 )
+	{
+		temp	= x % y;
+		x	= y;
+		y	= temp;
+	}
+	return(temp);
 }
 ```
 

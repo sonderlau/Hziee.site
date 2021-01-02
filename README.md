@@ -1,5 +1,7 @@
 # Hziee.site 在线文档项目
 
+![CI](https://github.com/sonderlau/HzieeFiles/workflows/CI/badge.svg)
+
 所有文档都在 `docs` 文件夹内 **如果你不熟悉 请不要轻易修改非`docs`文件夹内的文件** 
 
 另外编写文档时 图片 等请尽量压缩之后 放到与当前 `markdown`文件 相同目录下同名文件夹

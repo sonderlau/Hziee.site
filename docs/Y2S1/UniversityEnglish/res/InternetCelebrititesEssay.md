@@ -1,0 +1,7 @@
+
+
+With the rapid growth of Internet and smartphones, more and more people are using social networking media and regularly getting in touch with their friends. Beyond that, there has been a trend of posting fancy film clips known as Mini-Video. Thus, they teach others through it, and benefit from it. Then some of them become popular when audience find them charming , attractive or even just entertaning. They grab people's attention inorder to get further potiential concerns.
+
+As far as I'm concerned, the long-term impact of Internet celebrities is anxious, which means I take the opposite view. They shot  and decroate films attempting to get more subscribers no matter how absurd and pandering it would be even against law. Someone paid their life during filming when it considering their breathtaking work under unpredictable dangers like rooftops of skyscrapers. More profoundly, it is the absolutely wrong values that they give to the minors of audience who are lack of judgement and prone to regretful behaviour.
+
+It's a hustling and bustling world, the age of Death by Entertaining. All the more reason we should figuring beyond the surface of chaos. We know it's hard to focus on work  under this circumstance but also more valuable than before to actually do it. 
