@@ -1,6 +1,6 @@
-const resolve = require("vuepress-theme-hope/resolve");
+const {config} = require("vuepress-theme-hope");
 
-module.exports = resolve({
+module.exports = config({
     title: "Hziee Survival Guide",
     description: "在线文档",
     head: [
@@ -101,6 +101,20 @@ module.exports = resolve({
                 },
               ],
             },
+            {
+              text: "2021 讲课",
+              prefix: "/MISC/",
+              items: [
+                {
+                  text: "内容手稿",
+                  link: "Share/Main"
+                },
+                {
+                  text: "资源索引",
+                  link: "Share/Resources"
+                }
+              ]
+            }
           ],
         },
         {

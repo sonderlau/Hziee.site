@@ -74,7 +74,7 @@
 
 #### 过期处理
 
-```mysql
+```sql
 create event Expiry_detection_every_second
 on schedule
 every 1 second
@@ -91,7 +91,7 @@ do
 
 #### 对成功拼团的订单处理
 
-```mysql
+```sql
 create trigger Process_for_successful_grouping
 	after update Grouping_Users
 	for each row
@@ -241,7 +241,7 @@ end;
 
 > `Status`表在新建之后需要插入默认的数据 语句如下
 >
-> ```mysql
+> ```sql
 > insert into Status values(1,"自提商品制作中",3)
 > insert into Status values(3,"待提走",200)
 > 
