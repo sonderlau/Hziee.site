@@ -1,12 +1,12 @@
 # 资源索引列表
 
 1. [图灵社区 - JavaScript高级程序设计 第四版](https://www.ituring.com.cn/book/2472)
-2. SonderLau - JavaScript高级程序设计 第四版 正版电子书文件
+2. [SonderLau - JavaScript高级程序设计 第四版 正版电子书文件](@cos/MISC/Share/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.pdf)
 3. [阮一峰 - ES6 入门教程](https://es6.ruanyifeng.com/#README)
-4. [CSS权威指南 非官方中文译本](http://gdut_yy.gitee.io/doc-csstdg4/ch1.html#_1-1-a-brief-history-of-web-style)
+4. [CSS权威指南 第四版 非官方中文译本](http://gdut_yy.gitee.io/doc-csstdg4/ch1.html#_1-1-a-brief-history-of-web-style)
 5. [现代 JavaScript教程](https://zh.javascript.info/)
 6. [JavaScript教程 - 阮一峰](https://wangdoc.com/javascript/)
-7. [Bilibili](https://www.bilibili.com/)
+7. [Bilibili官网](https://www.bilibili.com/)
 8. [CommonJS](https://baike.baidu.com/item/CommonJS/1206163)
 9. [Node.js](https://nodejs.org/zh-cn/)
 10. [Github - awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs)
@@ -26,5 +26,5 @@
 24. [Hziee计科生存指南](https://hziee.site/)
 25. [npmjs](https://www.npmjs.com/)
 26. [Yarn](https://yarnpkg.com/)
-27. [Github Actions官方中文文档](https://docs.github.com/cn/free-pro-team@latest/actions)
+27. [Github Actions 官方中文文档](https://docs.github.com/cn/free-pro-team@latest/actions)
 28. [Web开发者 路线图](https://roadmap.sh/frontend)

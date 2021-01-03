@@ -1,5 +1,3 @@
-title: ES6 与 前端工程化入门 speaker: 刘柏田 url: https://hziee.site prismTheme: okaidia
-
 # ES6 与 前端工程化入门
 
 Sonder Lau on 2021/1/15
@@ -116,7 +114,7 @@ Sonder Lau on 2021/1/15
 
 请勿传播，因为正版书籍里面有我的账号的水印，大家就自己用就好了。
 
-> ![image-20210102103451542](Main.assets/image-20210102103451542.png)
+> ![image-20210102103451542](./Main.assets/image-20210102103451542.png)
 
 
 
@@ -156,7 +154,7 @@ Sonder Lau on 2021/1/15
 
 ### 模块化
 
-但是在开始之前我要强调一点，模块化是一种设计思想，并不是前端领域独有的。
+但是在开始之前我要强调一点，模块化是一种设计思想，并不是前端领域独有的一种东西。
 
 
 
@@ -166,7 +164,7 @@ Sonder Lau on 2021/1/15
 
 这意味着 当我们在编写代码的时候 就不需要读太多**上下文** 代码段。特别是在多人持续开发的时候，其他人的工作量会减小很多。
 
-上面提到的模块化，大家比较熟悉的如`Java`中的接口、类这种概念，但是`Class`类这个概念`JS`语言也是直到`ES6`才真正实现了出来，在这之前是没有这个概念的，
+上面提到的模块化，大家比较熟悉的如`Java`种的接口、类这种概念，但是`Class`类这个概念`JS`语言也是直到`ES6`才真正实现了出来，在这之前是没有这个概念的，
 
 目前前端领域主要包含
 
@@ -200,7 +198,7 @@ Sonder Lau on 2021/1/15
 
 ##### `AMD`
 
-- 这个不是做`CPU` 的那个，全称是 `Asynchronous Module Definition`
+- 这个不是做`CPU` 的那个，全程是 `Asynchronous Module Definition`
 
 - 这个做到了异步加载模块，也就是说，加载一个模块的快慢，并不影响后面的模块执行。
 
@@ -233,11 +231,9 @@ Sonder Lau on 2021/1/15
 
 - 有2个比较知名的库实现了该方式 `require.js` `curl.js` 后者停更挺久的了
 
-天下太平久矣，必有异教徒也。
-
 ##### `CMD`
 
-- 与`AMD`类似 其全程为 `Common Module Definition` 通用模块化定义
+- 与`AMD`类似 其全程为 `Common module definition` 通用模块化定义
 - `AMD`推崇 依赖前置，在定义模块的时候有需要声明其依赖的模块
 - 而`CMD`不同，他推崇就近依赖，即用到什么才引入什么
 - 两者各有优劣，区别只是对依赖的执行时机不同，注意这里我提到的是 执行时机，不是加载时机和方式
@@ -268,8 +264,6 @@ seajs.use(['math,js'], function(math){
 
 
 
-然而，非官方的自然不如原生的可靠
-
 ##### `ES6 Module`
 
 - 上面讲的都是第三方提出的一些加载模块的概念和原理并用自己的方式实现了
@@ -288,7 +282,7 @@ export {basicNum, add};
 
 // load
 import {basicNum, add} from './math';
-add(basicNum,2);
+add(1,2);
 ```
 
 
@@ -349,7 +343,7 @@ add(basicNum,2);
 > - 使用导入样式
 >   - 导入样式必须放在`style`标签的第一行，否则无效
 >   - `@import`的语法方式并不能充分利用好浏览器的并发请求，该加载行为很可能会被延后出发或者被其他资源挂起
->   - 由于其加载延后，页面可能会有闪烁的现象
+>   - 由于其加载靠后，页面可能会有闪烁的现象
 
 ##### 预处理器 `Sass`/`Less`
 
@@ -401,10 +395,12 @@ add(basicNum,2);
 
   - ```css
     input::placeholder {
-      color: grey;
+      color: red;
+      font-size: 1.2em;
+      font-style: italic;
     }
     ```
-    
+
   - ![image-20210102120124801](Main.assets/image-20210102120124801.png)
 
   - ![image-20210102120230016](Main.assets/image-20210102120230016.png)
@@ -416,7 +412,7 @@ add(basicNum,2);
   - 而`Autoprefixer`就能够帮我们解决该问题，输入同样的代码之后，他会自动帮我们编译成
 
   - ```css
-  input::-moz-placeholder {
+    input::-moz-placeholder {
       color: gray;
     }
     input:-ms-input-placeholder {
@@ -426,7 +422,7 @@ add(basicNum,2);
       color: gray;
     }
     ```
-  
+
 - 这仅仅是其中一个小功能，事实上`PostCSS`利用插件可以实现很多功能，并且他还支持`Less`/`Sass`等前置处理器
 
 
@@ -447,9 +443,7 @@ add(basicNum,2);
 
 ![Vue - Component Tree](./Main.assets/components.png)
 
-通俗的说，前端组件化就是为了代码复用，提高研发效率
-
-我们在设计组件的时候难免要思考两个问题
+通俗的说，前端组件化就是为了代码复用，提高研发效率。那么我们在设计组件的时候难免要思考两个问题
 
 
 
@@ -478,7 +472,7 @@ add(basicNum,2);
 
   - `React.js`提倡使用函数式编程，并不完全双向绑定，通常需要`onChange`事件更新父级的`state`来更新`view`，因此其更适合离散式的组合方式
 
-  - 上面的例子就是渐进式的方式，其优缺点也很明显了。优点即组件的职责划分非常清晰，缺点就是非直接相连的组件之间的通信不够方便也不够灵活
+  - 上面的例子就是渐进式的方式，其优缺点也很明显了。即组件的职责划分非常清晰，缺点就是非直接相连的组件之间的通信不够方便也不够灵活
 
   - 离散式的写一下上面的例子
 
@@ -530,7 +524,7 @@ add(basicNum,2);
 
 - `BEM`是一种`CSS`中`class`的命名方式
 
-  - `Block Element Modifier`
+  - `Block Element Modifer`
 
   - ```html
     <div class="menu">
@@ -588,7 +582,7 @@ add(basicNum,2);
 
 与自动化无关的部分我就会简单带过，有兴趣的可以自行去看看源码或者来问我都可以
 
-
+首先使用了`vuepres`如其名一样，是`vue`同一体系下的一个生成博客和文档网页的库，使用了`node.js`中`npm`进行各种包的管理
 
 #### 配置文件
 
@@ -791,7 +785,7 @@ add(basicNum,2);
 
 分享给大家一个Github上的前端学习路线图，仅此作为新年的礼物送给各位对前端感兴趣的同学们
 
-图比较长，我放到资源索引里面了
+
 
 最后我想留下两道题目，作为今天的结尾，题目不难，我也不会公布答案，因为都是实践题目，把代码运行就会得到答案。
 
@@ -805,7 +799,7 @@ console.log( 1 / 0);
 console.log( 0 / 0);
 ```
 
-上述的值分别是多少？
+上述的值是多少？
 
 ### Problem 2
 
@@ -840,4 +834,4 @@ console.log( 0 / 0);
 
 
 
-Thanks ❤️
+Thanks :heart:
