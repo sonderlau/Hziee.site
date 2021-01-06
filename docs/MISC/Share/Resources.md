@@ -5,7 +5,7 @@
 3. [阮一峰 - ES6 入门教程](https://es6.ruanyifeng.com/#README)
 4. [CSS权威指南 第四版 非官方中文译本](http://gdut_yy.gitee.io/doc-csstdg4/ch1.html#_1-1-a-brief-history-of-web-style)
 5. [现代 JavaScript教程](https://zh.javascript.info/)
-6. [JavaScript教程 - 阮一峰](https://wangdoc.com/javascript/)
+6. [阮一峰 - JavaScript教程](https://wangdoc.com/javascript/)
 7. [Bilibili官网](https://www.bilibili.com/)
 8. [CommonJS](https://baike.baidu.com/item/CommonJS/1206163)
 9. [Node.js](https://nodejs.org/zh-cn/)

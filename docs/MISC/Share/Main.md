@@ -1,4 +1,3 @@
-title: ES6 与 前端工程化入门 speaker: 刘柏田 url: https://hziee.site prismTheme: okaidia
 
 # ES6 与 前端工程化入门
 
@@ -116,7 +115,7 @@ Sonder Lau on 2021/1/15
 
 请勿传播，因为正版书籍里面有我的账号的水印，大家就自己用就好了。
 
-> ![image-20210102103451542](Main.assets/image-20210102103451542.png)
+> ![image-20210102103451542](./Main.assets/image-20210102103451542.png)
 
 
 
@@ -144,7 +143,7 @@ Sonder Lau on 2021/1/15
 
 倘若像之前开发一样，试想有许多重复的`div`嵌套`div`的`HTMl`代码，而这些重复的冗余代码会非常多，而他们之间就仅仅是数据的值不同，而数据的格式、显示的样式几乎完全一样。
 
-> ![image-20210102095547792](Main.assets/image-20210102095547792.png)
+> ![image-20210102095547792](./Main.assets/image-20210102095547792.png)
 
 如此庞大的代码量放到了项目中，增加了项目的文件大小，却并没有增加多少的新功能。
 
@@ -405,9 +404,9 @@ add(basicNum,2);
     }
     ```
     
-  - ![image-20210102120124801](Main.assets/image-20210102120124801.png)
+  - ![image-20210102120124801](./Main.assets/image-20210102120124801.png)
 
-  - ![image-20210102120230016](Main.assets/image-20210102120230016.png)
+  - ![image-20210102120230016](./Main.assets/image-20210102120230016.png)
 
   - 可以看到在火狐浏览器早些版本的实验性实现上是要有前缀才能够生效的
 
@@ -415,18 +414,18 @@ add(basicNum,2);
 
   - 而`Autoprefixer`就能够帮我们解决该问题，输入同样的代码之后，他会自动帮我们编译成
 
-  - ```css
-  input::-moz-placeholder {
-      color: gray;
-    }
-    input:-ms-input-placeholder {
-      color: gray;
-    }
-    input::placeholder {
-      color: gray;
-    }
-    ```
-  
+```css
+input:-moz-placeholder {
+	color: gray;
+}
+input:-ms-input-placeholder {
+	color: gray;
+}
+input::placeholder {
+	color: gray;
+}
+```
+
 - 这仅仅是其中一个小功能，事实上`PostCSS`利用插件可以实现很多功能，并且他还支持`Less`/`Sass`等前置处理器
 
 
@@ -445,7 +444,7 @@ add(basicNum,2);
 
 引用自`Vue.js`官方
 
-![Vue - Component Tree](./Main.assets/components.png)
+![Vue - Component Tree](././Main.assets/components.png)
 
 通俗的说，前端组件化就是为了代码复用，提高研发效率
 
@@ -457,13 +456,13 @@ add(basicNum,2);
 
 - 需要对拆分时的考虑做不同程度的考量,最主要的是 **细粒度** **通用性** 
 - 比如网页端的微信
-- ![image-20210102122320070](Main.assets/image-20210102122320070.png)
+- ![image-20210102122320070](./Main.assets/image-20210102122320070.png)
 - 我们可以分四步进行拆分，类似于数学中的点线面体的概念
   - 基础组件：指`input`、`button`这种基础标签，以及其他UI框架等封装过的通用UI组件
   - 业务组件：由基础组件组合成的业务抽象化UI
   - 区块组件：由基础组件组件和业务组件组合成的UI块
   - 页面组件：展示给用户的最终页面
-- ![ComponentsUnparted](Main.assets/ComponentsUnparted.jpg)
+- ![ComponentsUnparted](./Main.assets/ComponentsUnparted.jpg)
 - 这样就简单的拆分完了，然而我们还没有考虑`JS`部分的逻辑
 
 #### 组合
@@ -551,7 +550,7 @@ add(basicNum,2);
 
 #### `git flow` 工作流规范
 
-- ![gitflow](Main.assets/gitflow.jpg)
+- ![gitflow](./Main.assets/gitflow.jpg)
 - 分支命名规范
 - 代码合并规范等
 - 由于`git`并不是今天这节课的主线内容因此我把这部分的介绍网页放给了大家 请大家查阅 **计算机教育中缺失的一课**
