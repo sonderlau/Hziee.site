@@ -5,10 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install 
+      
+      - name: git status
+        run: git status -uno --porcelain
+
+      - name: reset Lock files
+        run: run git checkout yarn.lock
         
       - uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
