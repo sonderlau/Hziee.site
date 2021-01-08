@@ -12,8 +12,8 @@ jobs:
 
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ftp://ftB.cname-cdn.com:1041/wwwroot/
-          ftp-username: sonderlau
-          ftp-password: ${{ secrets.FTP_PW }}
+          server: ftp://ftB.cname-cdn.com:1041/wwwroot/
+          username: sonderlau
+          password: ${{ secrets.FTP_PW }}
           local-dir: ./docs/.vuepress/dist/ 
-          git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
+          security: loose
