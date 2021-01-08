@@ -21,4 +21,4 @@ jobs:
           username: sonderlau
           password: ${{ secrets.FTP_PW }}
           local-dir: /docs/.vuepress/dist/
-          security: verbose
+          security: loose
