@@ -23,6 +23,6 @@ jobs:
           username: sonderlau
           password: ${{ secrets.FTP_PW }}
           local-dir: ./docs/.vuepress/dist/
-          state-name: ../../../.ftp-deploy-sync-state.json
+          state-name: .ftp-deploy-sync-state.json
           security: loose
           log-level: verbose
