@@ -58,7 +58,10 @@ module.exports = config({
       appKey: "IchH7QBd1dwI6oXAUKlVhtmk",
     },
     mdEnhance: {
-      enableAll: true
+      enableAll: true,
+    },
+    encrypt: {
+      "/Y2S1/DataStructure/": "imbaNOt3s",
     },
     sidebar: "auto",
     sidebarDepth: 3,
@@ -139,9 +142,12 @@ module.exports = config({
         text: "大二 第一学期",
         prefix: "/Y2S1/",
         items: [
-          { text: "数据结构", link: "DataScrutcure/" },
-          { text: "C++高级程序设计", link: "CPP" },
-          { text: "大学英语-阅读", link:"UniversityEnglish/"}
+          { text: "数据结构", link: "DataStructure/" },
+          { text: "C++高级程序设计", link: "CPlusPlusAdvancedProgramming/" },
+          { text: "大学英语-阅读", link: "UniversityEnglish/" },
+          { text: "微信小程序", link: "MiniProgramme/" },
+          { text: "JavaEE开发", link: "JavaEE/" },
+          { text: "大作业开发文档合集", link: "docs/index" },
         ],
       },
       {
