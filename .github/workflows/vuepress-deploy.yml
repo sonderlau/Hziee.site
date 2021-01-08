@@ -10,12 +10,6 @@ jobs:
         with:
           frozen-lockfile: true
 
-      - name: list
-        run: ls
-      
-      - name: list dist
-        run: cd docs/.vuepress/dist/ && ls
-
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp://ftB.cname-cdn.com:1041/wwwroot/
