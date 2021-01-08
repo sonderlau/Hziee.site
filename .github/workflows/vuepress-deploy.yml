@@ -17,8 +17,11 @@ jobs:
 
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ftp://ftB.cname-cdn.com:1041/wwwroot/
+          server: ftB.cname-cdn.com
+          port: 1041
+          server-dir: wwwroot/
           username: sonderlau
           password: ${{ secrets.FTP_PW }}
           local-dir: ./docs/.vuepress/dist/
           security: loose
+          log-level: verbose
