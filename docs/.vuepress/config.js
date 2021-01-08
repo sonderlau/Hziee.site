@@ -44,7 +44,6 @@ module.exports = config({
   },
   themeConfig: {
     namedChunks: false,
-    pwa: false,
     hostname: "https://hziee.site/",
     blog: false,
     logo: "https://hziee.site/atom.png",
