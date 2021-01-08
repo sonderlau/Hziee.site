@@ -69,8 +69,8 @@ module.exports = config({
       {
         text: "杂项归档",
         items: [
-          { text: "报道事项", link: "/MISC/SchoolRegister" },
-          { text: "网页设计比赛", link: "/MISC/WebDesignCompetitionWorks" },
+          { text: "报道事项", link: "/MISC/SchoolRegister/" },
+          { text: "网页设计比赛", link: "/MISC/WebDesignCompetitionWorks/" },
           {
             text: "实验班相关",
             prefix: "/MISC/",
