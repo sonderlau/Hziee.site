@@ -10,10 +10,15 @@ jobs:
         with:
           frozen-lockfile: true
 
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
+        with:
+          cmd: run docs:build
+
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp://ftB.cname-cdn.com:1041/wwwroot/
           username: sonderlau
           password: ${{ secrets.FTP_PW }}
           local-dir: /docs/.vuepress/dist/
-          security: loose
+          security: verbose
