@@ -15,5 +15,5 @@ jobs:
           server: ftp://ftB.cname-cdn.com:1041/wwwroot/
           username: sonderlau
           password: ${{ secrets.FTP_PW }}
-          local-dir: docs/.vuepress/dist/ 
+          local-dir: /docs/.vuepress/dist/ 
           security: loose
