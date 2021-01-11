@@ -1,38 +1,28 @@
 const { config } = require("vuepress-theme-hope");
+const CloudKeyString = "@cos"
+const CloudFileAddress = "https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com"
 
 module.exports = config({
   title: "Hziee Survival Guide",
   description: "在线文档",
-  // head: [
-  //   ["link", { rel: "icon", href: "/atom.png" }],
-  //   ["link", { rel: "manifest", href: "/manifest.json" }],
-  //   ["meta", { name: "theme-color", content: "#3eaf7c" }],
-  //   ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
-  //   [
-  //     "meta",
-  //     { name: "apple-mobile-web-app-status-bar-style", content: "black" },
-  //   ],
-  //   ["link", { rel: "apple-touch-icon", href: "/icons/152x152_atom.png" }],
-  //   [
-  //     "meta",
-  //     {
-  //       name: "msapplication-TileImage",
-  //       content: "/icons/144x144_atom.png",
-  //     },
-  //   ],
-  //   ["meta", { name: "msapplication-TileColor", content: "#000000" }],
-  // ],
+  head:[
+    [
+      "script", {
+        src: "https://cdn.bootcdn.net/ajax/libs/vue/3.0.2/vue.cjs.prod.min.js"
+      }
+    ]
+  ],
   markdown: {
     plugins: [["markdown-it-replace-link"], ["markdown-it-task-lists"]],
     extendMarkdown: (md) => {
       md.set({ breaks: true });
       md.use(require("markdown-it-task-lists"));
       md.use(require("markdown-it-replace-link"), {
-        replaceLink: function(link, env) {
+        replaceLink: function (link, env) {
           //! 云端存储的替换
-          if (link.toString().startsWith("@cos")) {
+          if (link.toString().startsWith(CloudKeyString)) {
             return (
-              "https://hzieefiles-1300064754.cos.ap-shanghai.myqcloud.com" +
+              CloudFileAddress +
               link.toString().substring(4)
             );
           } else {
@@ -64,6 +54,57 @@ module.exports = config({
     },
     sidebar: "auto",
     sidebarDepth: 3,
+    footer: {
+      display: true,
+      copyright: "MIT Licensed | Copyright © 2021 SonderLau"
+    },
+    pwa: {
+      favicon: "/atom_64x64.ico",
+      themeColor: "#3eaf7c",
+      cachePic: true,
+      apple: {
+        icon: "/icons/152x152_atom.png",
+        color: "#fff"
+      },
+      msTile: {
+        image: "/icons/144x144_atom.png",
+        color: "#000"
+      },
+      manifest: {
+        icons: [
+          {
+            "src": "/icons/48x48_atom.png",
+            "sizes": "48x48",
+            "type": "image/png"
+          },
+          {
+            "src": "/icons/72x72_atom.png",
+            "sizes": "72x72",
+            "type": "image/png"
+          },
+          {
+            "src": "/icons/96x96_atom.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          },
+          {
+            "src": "/icons/144x144_atom.png",
+            "sizes": "144x144",
+            "type": "image/png"
+          },
+          {
+            "src": "/icons/168x168_atom.png",
+            "sizes": "168x168",
+            "type": "image/png"
+          },
+          {
+            "src": "/icons/192x192_atom.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }
+        ]
+      }
+    },
     nav: [
       { text: "主页", link: "/" },
       {
@@ -148,6 +189,17 @@ module.exports = config({
           { text: "JavaEE开发", link: "JavaEE/" },
           { text: "大作业开发文档合集", link: "docs/index" },
         ],
+      },
+      {
+        text: "大二 第二学期",
+        prefix: "/Y2S2/",
+        items: [
+          {text:"大学物理"},
+          {text:"线性代数"},
+          {text:"概率论"},
+          {text:"操作系统"},
+          {text:"PHP程序设计"}
+        ]
       },
       {
         text: "项目源码",
